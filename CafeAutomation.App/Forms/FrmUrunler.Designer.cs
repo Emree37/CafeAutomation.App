@@ -38,7 +38,6 @@ namespace CafeAutomation.App.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.btnEkle = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
-            this.btnGeriDön = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -124,15 +123,6 @@ namespace CafeAutomation.App.Forms
             this.btnGuncelle.UseVisualStyleBackColor = true;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
-            // btnGeriDön
-            // 
-            this.btnGeriDön.Location = new System.Drawing.Point(556, 277);
-            this.btnGeriDön.Name = "btnGeriDön";
-            this.btnGeriDön.Size = new System.Drawing.Size(93, 39);
-            this.btnGeriDön.TabIndex = 9;
-            this.btnGeriDön.Text = "Geri Dön";
-            this.btnGeriDön.UseVisualStyleBackColor = true;
-            // 
             // btnCikis
             // 
             this.btnCikis.Location = new System.Drawing.Point(667, 277);
@@ -190,7 +180,6 @@ namespace CafeAutomation.App.Forms
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCikis);
-            this.Controls.Add(this.btnGeriDön);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.label3);
@@ -219,7 +208,6 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Button btnGuncelle;
-        private System.Windows.Forms.Button btnGeriDön;
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

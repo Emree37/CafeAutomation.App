@@ -18,47 +18,33 @@ namespace CafeAutomation.App
             InitializeComponent();
         }
 
-        private void btnMasalar_MouseEnter(object sender, EventArgs e)
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            btnMasalar.UseVisualStyleBackColor = false;
-            btnMasalar.BackColor = Color.DarkGray;
+            var result = MessageBox.Show("Programı kapatmak istiyor musunuz?", "Dikkat", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result != DialogResult.Yes)
+                e.Cancel = true;
         }
 
-        private void btnMasalar_MouseLeave(object sender, EventArgs e)
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            btnMasalar.UseVisualStyleBackColor = true;
-            btnMasalar.BackColor = Color.Transparent;
+            Application.Exit();
         }
 
-        private void btnRaporlar_MouseEnter(object sender, EventArgs e)
+        private void mASALARToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            btnRaporlar.UseVisualStyleBackColor = false;
-            btnRaporlar.BackColor = Color.DarkGray;
+
         }
 
-        private void btnRaporlar_MouseLeave(object sender, EventArgs e)
+        private FrmUrunler frmUrunler;
+        private void üRÜNLERToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            btnRaporlar.UseVisualStyleBackColor = true;
-            btnRaporlar.BackColor = Color.Transparent;
-        }
-
-        private void btnCikis_MouseEnter(object sender, EventArgs e)
-        {
-            btnCikis.UseVisualStyleBackColor = false;
-            btnCikis.BackColor = Color.Red;
-        }
-
-        private void btnCikis_MouseLeave(object sender, EventArgs e)
-        {
-            btnCikis.UseVisualStyleBackColor = true;
-            btnCikis.BackColor = Color.Transparent;
-        }
-
-        private void btnUrunler_Click(object sender, EventArgs e)
-        {
-            FrmUrunler frmUrunler = new FrmUrunler();
+            if (frmUrunler == null || frmUrunler.IsDisposed)
+                frmUrunler = new FrmUrunler();
+            frmUrunler.MdiParent = this;
             frmUrunler.Show();
-            this.Hide();
         }
+
+        
     }
 }

@@ -31,6 +31,7 @@ namespace CafeAutomation.App.Forms
         {
             UrunContext.Load();
             ListeyiDoldur();
+            
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
@@ -78,5 +79,6 @@ namespace CafeAutomation.App.Forms
             ListeyiDoldur();
             UrunContext.Save();
         }
+
     }
 }
