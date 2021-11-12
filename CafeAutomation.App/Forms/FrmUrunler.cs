@@ -71,7 +71,6 @@ namespace CafeAutomation.App.Forms
             UrunContext.Save();
         }
 
-        private List<Urun> urunlerTemp = new List<Urun>();
         private void btnSil_Click(object sender, EventArgs e)
         {
             seciliUrun = lstUrunler.SelectedItem as Urun;
