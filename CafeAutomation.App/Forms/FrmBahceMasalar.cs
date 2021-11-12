@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CafeAutomation.App.Forms
 {
-    public partial class FrmMasalar : Form
+    public partial class FrmBahceMasalar : Form
     {
-        public FrmMasalar()
+        public FrmBahceMasalar()
         {
             InitializeComponent();
         }

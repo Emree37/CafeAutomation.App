@@ -32,6 +32,9 @@ namespace CafeAutomation.App
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mASALARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bAHÇEKATIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zEMİNKATToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tERASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.üRÜNLERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rAPORLARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -51,10 +54,34 @@ namespace CafeAutomation.App
             // 
             // mASALARToolStripMenuItem
             // 
+            this.mASALARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bAHÇEKATIToolStripMenuItem,
+            this.zEMİNKATToolStripMenuItem,
+            this.tERASToolStripMenuItem});
             this.mASALARToolStripMenuItem.Name = "mASALARToolStripMenuItem";
             this.mASALARToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.mASALARToolStripMenuItem.Text = "MASALAR";
-            this.mASALARToolStripMenuItem.Click += new System.EventHandler(this.mASALARToolStripMenuItem_Click);
+            // 
+            // bAHÇEKATIToolStripMenuItem
+            // 
+            this.bAHÇEKATIToolStripMenuItem.Name = "bAHÇEKATIToolStripMenuItem";
+            this.bAHÇEKATIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bAHÇEKATIToolStripMenuItem.Text = "BAHÇE KATI";
+            this.bAHÇEKATIToolStripMenuItem.Click += new System.EventHandler(this.bAHÇEKATIToolStripMenuItem_Click);
+            // 
+            // zEMİNKATToolStripMenuItem
+            // 
+            this.zEMİNKATToolStripMenuItem.Name = "zEMİNKATToolStripMenuItem";
+            this.zEMİNKATToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.zEMİNKATToolStripMenuItem.Text = "ZEMİN KAT";
+            this.zEMİNKATToolStripMenuItem.Click += new System.EventHandler(this.zEMİNKATToolStripMenuItem_Click);
+            // 
+            // tERASToolStripMenuItem
+            // 
+            this.tERASToolStripMenuItem.Name = "tERASToolStripMenuItem";
+            this.tERASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tERASToolStripMenuItem.Text = "TERAS";
+            this.tERASToolStripMenuItem.Click += new System.EventHandler(this.tERASToolStripMenuItem_Click);
             // 
             // üRÜNLERToolStripMenuItem
             // 
@@ -98,6 +125,9 @@ namespace CafeAutomation.App
         private System.Windows.Forms.ToolStripMenuItem mASALARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem üRÜNLERToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rAPORLARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bAHÇEKATIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zEMİNKATToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tERASToolStripMenuItem;
     }
 }
 

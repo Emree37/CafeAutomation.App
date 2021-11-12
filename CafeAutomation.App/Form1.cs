@@ -31,10 +31,7 @@ namespace CafeAutomation.App
             Application.Exit();
         }
 
-        private void mASALARToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private FrmUrunler frmUrunler;
         private void üRÜNLERToolStripMenuItem_Click(object sender, EventArgs e)
@@ -45,6 +42,31 @@ namespace CafeAutomation.App
             frmUrunler.Show();
         }
 
-        
+        private FrmBahceMasalar frmBahceMasalar;
+        private void bAHÇEKATIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmBahceMasalar == null || frmBahceMasalar.IsDisposed)
+                frmBahceMasalar = new FrmBahceMasalar();
+            frmBahceMasalar.MdiParent = this;
+            frmBahceMasalar.Show();
+        }
+
+        private FrmZeminMasalar frmZeminMasalar;
+        private void zEMİNKATToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmZeminMasalar == null || frmZeminMasalar.IsDisposed)
+                frmZeminMasalar = new FrmZeminMasalar();
+            frmZeminMasalar.MdiParent = this;
+            frmZeminMasalar.Show();
+        }
+
+        private FrmTerasMasalar frmTerasMasalar;
+        private void tERASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmTerasMasalar == null || frmTerasMasalar.IsDisposed)
+                frmTerasMasalar = new FrmTerasMasalar();
+            frmTerasMasalar.MdiParent = this;
+            frmTerasMasalar.Show();
+        }
     }
 }

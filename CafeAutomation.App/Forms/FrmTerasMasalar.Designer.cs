@@ -1,7 +1,7 @@
 ﻿
 namespace CafeAutomation.App.Forms
 {
-    partial class FrmMasalar
+    partial class FrmTerasMasalar
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace CafeAutomation.App.Forms
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FrmMasalar";
+            this.Text = "FrmTerasMasalar";
         }
 
         #endregion
