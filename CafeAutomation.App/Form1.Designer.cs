@@ -33,6 +33,7 @@ namespace CafeAutomation.App
             this.btnMasalar = new System.Windows.Forms.Button();
             this.btnRaporlar = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
+            this.btnUrunler = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMasalar
@@ -42,7 +43,7 @@ namespace CafeAutomation.App
             this.btnMasalar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMasalar.Font = new System.Drawing.Font("Bernard MT Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMasalar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMasalar.Location = new System.Drawing.Point(509, 137);
+            this.btnMasalar.Location = new System.Drawing.Point(509, 119);
             this.btnMasalar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMasalar.Name = "btnMasalar";
             this.btnMasalar.Size = new System.Drawing.Size(166, 64);
@@ -60,7 +61,7 @@ namespace CafeAutomation.App
             this.btnRaporlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRaporlar.Font = new System.Drawing.Font("Bernard MT Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRaporlar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRaporlar.Location = new System.Drawing.Point(509, 211);
+            this.btnRaporlar.Location = new System.Drawing.Point(509, 258);
             this.btnRaporlar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRaporlar.Name = "btnRaporlar";
             this.btnRaporlar.Size = new System.Drawing.Size(166, 64);
@@ -78,7 +79,7 @@ namespace CafeAutomation.App
             this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCikis.Font = new System.Drawing.Font("Bernard MT Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCikis.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCikis.Location = new System.Drawing.Point(509, 301);
+            this.btnCikis.Location = new System.Drawing.Point(509, 351);
             this.btnCikis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.Size = new System.Drawing.Size(166, 57);
@@ -88,6 +89,23 @@ namespace CafeAutomation.App
             this.btnCikis.MouseEnter += new System.EventHandler(this.btnCikis_MouseEnter);
             this.btnCikis.MouseLeave += new System.EventHandler(this.btnCikis_MouseLeave);
             // 
+            // btnUrunler
+            // 
+            this.btnUrunler.BackColor = System.Drawing.Color.Transparent;
+            this.btnUrunler.FlatAppearance.BorderSize = 0;
+            this.btnUrunler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUrunler.Font = new System.Drawing.Font("Bernard MT Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnUrunler.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnUrunler.Location = new System.Drawing.Point(509, 193);
+            this.btnUrunler.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUrunler.Name = "btnUrunler";
+            this.btnUrunler.Size = new System.Drawing.Size(166, 64);
+            this.btnUrunler.TabIndex = 3;
+            this.btnUrunler.TabStop = false;
+            this.btnUrunler.Text = "ÜRÜNLER";
+            this.btnUrunler.UseVisualStyleBackColor = false;
+            this.btnUrunler.Click += new System.EventHandler(this.btnUrunler_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -95,6 +113,7 @@ namespace CafeAutomation.App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1120, 562);
+            this.Controls.Add(this.btnUrunler);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.btnRaporlar);
             this.Controls.Add(this.btnMasalar);
@@ -112,6 +131,7 @@ namespace CafeAutomation.App
         private System.Windows.Forms.Button btnMasalar;
         private System.Windows.Forms.Button btnRaporlar;
         private System.Windows.Forms.Button btnCikis;
+        private System.Windows.Forms.Button btnUrunler;
     }
 }
 

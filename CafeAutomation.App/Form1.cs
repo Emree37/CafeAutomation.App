@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeAutomation.App.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,6 +52,13 @@ namespace CafeAutomation.App
         {
             btnCikis.UseVisualStyleBackColor = true;
             btnCikis.BackColor = Color.Transparent;
+        }
+
+        private void btnUrunler_Click(object sender, EventArgs e)
+        {
+            FrmUrunler frmUrunler = new FrmUrunler();
+            frmUrunler.Show();
+            this.Hide();
         }
     }
 }
