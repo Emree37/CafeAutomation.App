@@ -30,9 +30,15 @@ namespace CafeAutomation.App.Forms
                     Height = 80,
                     Width = 80
                 };
-
+                masaButon.Click += new EventHandler(YeniButon_Click);
                 flpBahceMasalar.Controls.Add(masaButon);
             }
+        }
+
+        protected void YeniButon_Click(object sender,EventArgs e)
+        {
+            //YeniForm açma ve butonları gösterme kodlarını buraya yaz
+            MessageBox.Show("Heyyyyy");
         }
 
         private void FrmBahceMasalar_Load(object sender, EventArgs e)
