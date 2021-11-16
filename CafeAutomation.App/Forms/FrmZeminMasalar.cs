@@ -30,9 +30,14 @@ namespace CafeAutomation.App.Forms
                     Height = 80,
                     Width = 80
                 };
-
+                masaButon.Click += new EventHandler(YeniButon_Click);
                 flpZeminMasalar.Controls.Add(masaButon);
             }
+        }
+
+        private void YeniButon_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Heyyyy");
         }
 
         private ZeminMasa silinecekZeminMasa;
@@ -51,39 +56,38 @@ namespace CafeAutomation.App.Forms
                 ZeminMasaNumarası = txtMasaNumarasi.Text
             };
             ZeminMasaContext.ZeminMasalar.Add(yeniZeminMasa);
-            flpZeminMasalar.Controls.Clear();
-            MasalariGetir();
             ZeminMasaContext.Save();
+            MasalariGetir();
         }
 
-        private void MasaOlustur()
-        {
-            for (int i = 1; i < 11; i++)
-            {
-                Button ilkButon = new Button
-                {
-                    Name = $"zeminMasa{i}",
-                    Text = $"Zemin Masa - {i}",
-                    Height = 80,
-                    Width = 80
-                };
-                flpZeminMasalar.Controls.Add(ilkButon);
-            }
-            for (int i = 1; i < 11; i++)
-            {
-                ZeminMasa ilkMasalar = new ZeminMasa()
-                {
-                    ZeminMasaNumarası = i.ToString()
-                };
-                ZeminMasaContext.ZeminMasalar.Add(ilkMasalar);
-            }
-            ZeminMasaContext.Save();
-        }
+        //private void MasaOlustur()
+        //{
+        //    for (int i = 1; i < 11; i++)
+        //    {
+        //        Button ilkButon = new Button
+        //        {
+        //            Name = $"zeminMasa{i}",
+        //            Text = $"Zemin Masa - {i}",
+        //            Height = 80,
+        //            Width = 80
+        //        };
+        //        flpZeminMasalar.Controls.Add(ilkButon);
+        //    }
+        //    for (int i = 1; i < 11; i++)
+        //    {
+        //        ZeminMasa ilkMasalar = new ZeminMasa()
+        //        {
+        //            ZeminMasaNumarası = i.ToString()
+        //        };
+        //        ZeminMasaContext.ZeminMasalar.Add(ilkMasalar);
+        //    }
+        //    ZeminMasaContext.Save();
+        //}
 
 
         private void FrmZeminMasalar_Load(object sender, EventArgs e)
         {
-            MasaOlustur();
+            //MasaOlustur();
             flpZeminMasalar.Controls.Clear();
             ZeminMasaContext.Load();
             MasalariGetir();

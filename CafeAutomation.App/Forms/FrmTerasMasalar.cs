@@ -30,14 +30,19 @@ namespace CafeAutomation.App.Forms
                     Height = 80,
                     Width = 80
                 };
-
+                masaButon.Click += new EventHandler(YeniButon_Click);
                 flpTerasMasalar.Controls.Add(masaButon);
             }
         }
 
+        private void YeniButon_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Heyyyy");
+        }
+
         private void FrmTerasMasalar_Load(object sender, EventArgs e)
         {
-            MasaOlustur();
+            //MasaOlustur();
             flpTerasMasalar.Controls.Clear();
             TerasMasaContext.Load();
             MasalariGetir();
@@ -59,33 +64,32 @@ namespace CafeAutomation.App.Forms
                 TerasMasaNumarası = txtMasaNumarasi.Text
             };
             TerasMasaContext.TerasMasalar.Add(yeniTerasMasa);
-            flpTerasMasalar.Controls.Clear();
-            MasalariGetir();
             TerasMasaContext.Save();
+            MasalariGetir();
         }
 
-        private void MasaOlustur()
-        {
-            for (int i = 1; i < 11; i++)
-            {
-                Button ilkButon = new Button
-                {
-                    Name = $"terasMasa{i}",
-                    Text = $"Teras Masa - {i}",
-                    Height = 80,
-                    Width = 80
-                };
-                flpTerasMasalar.Controls.Add(ilkButon);
-            }
-            for (int i = 1; i < 11; i++)
-            {
-                TerasMasa ilkMasalar = new TerasMasa()
-                {
-                    TerasMasaNumarası = i.ToString()
-                };
-                TerasMasaContext.TerasMasalar.Add(ilkMasalar);
-            }
-            TerasMasaContext.Save();
-        }
+        //private void MasaOlustur()
+        //{
+        //    for (int i = 1; i < 11; i++)
+        //    {
+        //        Button ilkButon = new Button
+        //        {
+        //            Name = $"terasMasa{i}",
+        //            Text = $"Teras Masa - {i}",
+        //            Height = 80,
+        //            Width = 80
+        //        };
+        //        flpTerasMasalar.Controls.Add(ilkButon);
+        //    }
+        //    for (int i = 1; i < 11; i++)
+        //    {
+        //        TerasMasa ilkMasalar = new TerasMasa()
+        //        {
+        //            TerasMasaNumarası = i.ToString()
+        //        };
+        //        TerasMasaContext.TerasMasalar.Add(ilkMasalar);
+        //    }
+        //    TerasMasaContext.Save();
+        //}
     }
 }
