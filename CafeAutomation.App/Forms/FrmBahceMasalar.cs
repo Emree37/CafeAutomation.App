@@ -43,7 +43,7 @@ namespace CafeAutomation.App.Forms
 
         private void FrmBahceMasalar_Load(object sender, EventArgs e)
         {
-            MasaOlustur();
+            //MasaOlustur();
             flpBahceMasalar.Controls.Clear();
             BahceMasaContext.Load();
             MasalariGetir();
@@ -56,34 +56,33 @@ namespace CafeAutomation.App.Forms
                 BahceMasaNumarası = txtMasaNumarasi.Text
             };
             BahceMasaContext.BahceMasalar.Add(yeniBahceMasa);
-            flpBahceMasalar.Controls.Clear();
-            MasalariGetir();
             BahceMasaContext.Save();
+            MasalariGetir();
         }
 
-        private void MasaOlustur()
-        {
-            for (int i = 1; i < 11; i++)
-            {
-                Button ilkButon = new Button
-                {
-                    Name = $"bahceMasa{i}",
-                    Text = $"Bahçe Masa - {i}",
-                    Height = 80,
-                    Width = 80
-                };
-                flpBahceMasalar.Controls.Add(ilkButon);
-            }
-            for (int i = 1; i < 11; i++)
-            {
-                BahceMasa ilkMasalar = new BahceMasa()
-                {
-                    BahceMasaNumarası = i.ToString()
-                };
-                BahceMasaContext.BahceMasalar.Add(ilkMasalar);
-            }
-            BahceMasaContext.Save();
-        }
+        //private void MasaOlustur()
+        //{
+        //    for (int i = 1; i < 11; i++)
+        //    {
+        //        Button ilkButon = new Button
+        //        {
+        //            Name = $"bahceMasa{i}",
+        //            Text = $"Bahçe Masa - {i}",
+        //            Height = 80,
+        //            Width = 80
+        //        };
+        //        flpBahceMasalar.Controls.Add(ilkButon);
+        //    }
+        //    for (int i = 1; i < 11; i++)
+        //    {
+        //        BahceMasa ilkMasalar = new BahceMasa()
+        //        {
+        //            BahceMasaNumarası = i.ToString()
+        //        };
+        //        BahceMasaContext.BahceMasalar.Add(ilkMasalar);
+        //    }
+        //    BahceMasaContext.Save();
+        //}
 
         private BahceMasa silinecekBahceMasa;
         private void btnMasaSil_Click(object sender, EventArgs e)
