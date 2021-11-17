@@ -32,8 +32,10 @@ namespace CafeAutomation.App.Forms
                 };
                 masaButon.Click += new EventHandler(YeniButon_Click);
                 flpBahceMasalar.Controls.Add(masaButon);
+                
             }
         }
+
 
         private FrmSiparis frmSiparis;
         protected void YeniButon_Click(object sender,EventArgs e)
@@ -45,7 +47,9 @@ namespace CafeAutomation.App.Forms
             frmSiparis.MdiParent = this;
             frmSiparis.Show();
 
-            frmSiparis.lblMasaIsmi.Text = "bahceMasa1.Name";
+            var btn = sender as Button;
+            frmSiparis.lblMasaIsmi.Text = btn.Name;
+
             frmSiparis.SiparisleriGetir();
             frmSiparis.ToplamTutarHesaplama();
             ButonlarıGizle();
@@ -76,18 +80,19 @@ namespace CafeAutomation.App.Forms
 
         private void FrmBahceMasalar_Load(object sender, EventArgs e)
         {
-            MasaKontrol();
+            
             //------------------------------------------------
             flpBahceMasalar.Controls.Clear();
             BahceMasaContext.Load();
             MasalariGetir();
+            MasaKontrol();
         }
 
         private void MasaKontrol()
         {
             SiparisDetayContext.Load();
             int sayac = 0;
-            foreach (Control item in this.Controls)
+            foreach (Control item in this.flpBahceMasalar.Controls)
             {
                 if (item is Button)
                 {

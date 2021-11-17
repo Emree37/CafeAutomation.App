@@ -102,11 +102,10 @@ namespace CafeAutomation.App.Forms
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel flpBahceMasalar;
         private System.Windows.Forms.Button btnMasaEkle;
         private System.Windows.Forms.TextBox txtMasaNumarasi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMasaSil;
+        public System.Windows.Forms.FlowLayoutPanel flpBahceMasalar;
     }
 }

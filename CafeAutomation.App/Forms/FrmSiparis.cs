@@ -60,9 +60,11 @@ namespace CafeAutomation.App.Forms
                     sayac++;
                 }
             }
+            FrmBahceMasalar parent = this.MdiParent as FrmBahceMasalar;
             if (sayac != 0)
             {
-                foreach (Control item in this.MdiParent.Controls)
+                
+                foreach (Control item in parent.flpBahceMasalar.Controls)
                 {
                     if (item is Button)
                     {
@@ -75,7 +77,7 @@ namespace CafeAutomation.App.Forms
             }
             else
             {
-                foreach (Control item in this.MdiParent.Controls)
+                foreach (Control item in parent.flpBahceMasalar.Controls)
                 {
                     if (item is Button)
                     {
