@@ -33,7 +33,6 @@ namespace CafeAutomation.App.Forms
             this.lstUrunler = new System.Windows.Forms.ListBox();
             this.txtUrunAd = new System.Windows.Forms.TextBox();
             this.txtFiyat = new System.Windows.Forms.TextBox();
-            this.txtKategori = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@ namespace CafeAutomation.App.Forms
             this.btnGeriDon = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbKategoriler = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,13 +68,6 @@ namespace CafeAutomation.App.Forms
             this.txtFiyat.Name = "txtFiyat";
             this.txtFiyat.Size = new System.Drawing.Size(199, 23);
             this.txtFiyat.TabIndex = 2;
-            // 
-            // txtKategori
-            // 
-            this.txtKategori.Location = new System.Drawing.Point(98, 401);
-            this.txtKategori.Name = "txtKategori";
-            this.txtKategori.Size = new System.Drawing.Size(199, 23);
-            this.txtKategori.TabIndex = 3;
             // 
             // label1
             // 
@@ -149,11 +142,11 @@ namespace CafeAutomation.App.Forms
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.cmbKategoriler);
             this.groupBox1.Controls.Add(this.btnSil);
             this.groupBox1.Controls.Add(this.lstUrunler);
             this.groupBox1.Controls.Add(this.txtUrunAd);
             this.groupBox1.Controls.Add(this.txtFiyat);
-            this.groupBox1.Controls.Add(this.txtKategori);
             this.groupBox1.Controls.Add(this.btnGeriDon);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnGuncelle);
@@ -166,13 +159,21 @@ namespace CafeAutomation.App.Forms
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
+            // cmbKategoriler
+            // 
+            this.cmbKategoriler.FormattingEnabled = true;
+            this.cmbKategoriler.Location = new System.Drawing.Point(98, 401);
+            this.cmbKategoriler.Name = "cmbKategoriler";
+            this.cmbKategoriler.Size = new System.Drawing.Size(199, 23);
+            this.cmbKategoriler.TabIndex = 15;
+            // 
             // FrmUrunler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1282, 635);
+            this.ClientSize = new System.Drawing.Size(1456, 868);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -191,7 +192,6 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.ListBox lstUrunler;
         private System.Windows.Forms.TextBox txtUrunAd;
         private System.Windows.Forms.TextBox txtFiyat;
-        private System.Windows.Forms.TextBox txtKategori;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -200,5 +200,6 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.Button btnGeriDon;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cmbKategoriler;
     }
 }

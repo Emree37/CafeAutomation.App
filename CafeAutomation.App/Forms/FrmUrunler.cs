@@ -27,8 +27,22 @@ namespace CafeAutomation.App.Forms
             }
         }
 
+        private void Combobox()
+        {
+            cmbKategoriler.Items.Add("Çorbalar");
+            cmbKategoriler.Items.Add("Yemekler");
+            cmbKategoriler.Items.Add("FastFood");
+            cmbKategoriler.Items.Add("Sıcak İçecekler");
+            cmbKategoriler.Items.Add("Soğuk İçecekler");
+            cmbKategoriler.Items.Add("Tatlılar");
+
+            cmbKategoriler.SelectedItem = null;
+            cmbKategoriler.SelectedText = "--Seçiniz--";
+        }
+
         private void FrmUrunler_Load(object sender, EventArgs e)
         {
+            Combobox();
             UrunContext.Load();
             ListeyiDoldur();
 
@@ -40,7 +54,7 @@ namespace CafeAutomation.App.Forms
             {
                 UrunAdi = txtUrunAd.Text,
                 Fiyat = txtFiyat.Text,
-                Kategori = txtKategori.Text
+                Kategori = cmbKategoriler.SelectedItem.ToString()
             };
             UrunContext.Urunler.Add(yeniUrun);
             ListeyiDoldur();
@@ -54,7 +68,7 @@ namespace CafeAutomation.App.Forms
             seciliUrun = lstUrunler.SelectedItem as Urun;
             txtUrunAd.Text = seciliUrun.UrunAdi;
             txtFiyat.Text = seciliUrun.Fiyat;
-            txtKategori.Text = seciliUrun.Kategori;
+            cmbKategoriler.SelectedItem = seciliUrun.Kategori;
         }
 
         
@@ -63,7 +77,7 @@ namespace CafeAutomation.App.Forms
         {
             seciliUrun.UrunAdi = txtUrunAd.Text;
             seciliUrun.Fiyat = txtFiyat.Text;
-            seciliUrun.Kategori = txtKategori.Text;
+            seciliUrun.Kategori = cmbKategoriler.SelectedItem.ToString();
             ListeyiDoldur();
             UrunContext.Save();
         }

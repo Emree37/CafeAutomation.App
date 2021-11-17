@@ -129,6 +129,9 @@ namespace CafeAutomation.App.Forms
             dgvSiparisRapor.Columns[3].HeaderText = "TOPLAM TUTAR";
         }
 
-       
+        private void btnGeriDon_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -33,11 +33,13 @@ namespace CafeAutomation.App.Forms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRapor));
             this.dgvSiparisRapor = new System.Windows.Forms.DataGridView();
             this.dgvSiparisDetayRapor = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lblSecilenGunIsmi = new System.Windows.Forms.Label();
             this.lblGunToplamTutar = new System.Windows.Forms.Label();
+            this.btnGeriDon = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisRapor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisDetayRapor)).BeginInit();
             this.SuspendLayout();
@@ -60,13 +62,13 @@ namespace CafeAutomation.App.Forms
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSiparisRapor.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvSiparisRapor.Location = new System.Drawing.Point(12, 44);
+            this.dgvSiparisRapor.Location = new System.Drawing.Point(12, 65);
             this.dgvSiparisRapor.MultiSelect = false;
             this.dgvSiparisRapor.Name = "dgvSiparisRapor";
             this.dgvSiparisRapor.ReadOnly = true;
             this.dgvSiparisRapor.RowTemplate.Height = 25;
             this.dgvSiparisRapor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSiparisRapor.Size = new System.Drawing.Size(650, 250);
+            this.dgvSiparisRapor.Size = new System.Drawing.Size(650, 400);
             this.dgvSiparisRapor.TabIndex = 0;
             this.dgvSiparisRapor.SelectionChanged += new System.EventHandler(this.dgvSiparisRapor_SelectionChanged);
             // 
@@ -87,18 +89,18 @@ namespace CafeAutomation.App.Forms
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSiparisDetayRapor.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvSiparisDetayRapor.Location = new System.Drawing.Point(668, 44);
+            this.dgvSiparisDetayRapor.Location = new System.Drawing.Point(12, 550);
             this.dgvSiparisDetayRapor.MultiSelect = false;
             this.dgvSiparisDetayRapor.Name = "dgvSiparisDetayRapor";
             this.dgvSiparisDetayRapor.ReadOnly = true;
             this.dgvSiparisDetayRapor.RowTemplate.Height = 25;
             this.dgvSiparisDetayRapor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSiparisDetayRapor.Size = new System.Drawing.Size(650, 250);
+            this.dgvSiparisDetayRapor.Size = new System.Drawing.Size(650, 400);
             this.dgvSiparisDetayRapor.TabIndex = 1;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 319);
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 12);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker1.TabIndex = 2;
@@ -107,27 +109,46 @@ namespace CafeAutomation.App.Forms
             // lblSecilenGunIsmi
             // 
             this.lblSecilenGunIsmi.AutoSize = true;
-            this.lblSecilenGunIsmi.Location = new System.Drawing.Point(238, 319);
+            this.lblSecilenGunIsmi.BackColor = System.Drawing.Color.Transparent;
+            this.lblSecilenGunIsmi.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSecilenGunIsmi.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblSecilenGunIsmi.Location = new System.Drawing.Point(267, 9);
             this.lblSecilenGunIsmi.Name = "lblSecilenGunIsmi";
-            this.lblSecilenGunIsmi.Size = new System.Drawing.Size(38, 15);
+            this.lblSecilenGunIsmi.Size = new System.Drawing.Size(65, 28);
             this.lblSecilenGunIsmi.TabIndex = 3;
             this.lblSecilenGunIsmi.Text = "label1";
             // 
             // lblGunToplamTutar
             // 
             this.lblGunToplamTutar.AutoSize = true;
-            this.lblGunToplamTutar.Location = new System.Drawing.Point(417, 319);
+            this.lblGunToplamTutar.BackColor = System.Drawing.Color.Transparent;
+            this.lblGunToplamTutar.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblGunToplamTutar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblGunToplamTutar.Location = new System.Drawing.Point(597, 9);
             this.lblGunToplamTutar.Name = "lblGunToplamTutar";
-            this.lblGunToplamTutar.Size = new System.Drawing.Size(38, 15);
+            this.lblGunToplamTutar.Size = new System.Drawing.Size(65, 28);
             this.lblGunToplamTutar.TabIndex = 4;
             this.lblGunToplamTutar.Text = "label2";
+            // 
+            // btnGeriDon
+            // 
+            this.btnGeriDon.Location = new System.Drawing.Point(1755, 884);
+            this.btnGeriDon.Name = "btnGeriDon";
+            this.btnGeriDon.Size = new System.Drawing.Size(97, 66);
+            this.btnGeriDon.TabIndex = 5;
+            this.btnGeriDon.Text = "GERİ DÖN";
+            this.btnGeriDon.UseVisualStyleBackColor = true;
+            this.btnGeriDon.Click += new System.EventHandler(this.btnGeriDon_Click);
             // 
             // FrmRapor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(1347, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1864, 978);
+            this.Controls.Add(this.btnGeriDon);
             this.Controls.Add(this.lblGunToplamTutar);
             this.Controls.Add(this.lblSecilenGunIsmi);
             this.Controls.Add(this.dateTimePicker1);
@@ -154,5 +175,6 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label lblSecilenGunIsmi;
         private System.Windows.Forms.Label lblGunToplamTutar;
+        private System.Windows.Forms.Button btnGeriDon;
     }
 }
