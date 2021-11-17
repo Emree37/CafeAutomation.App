@@ -16,6 +16,8 @@ namespace CafeAutomation.App.Forms
         public FrmRapor()
         {
             InitializeComponent();
+            DatagridviewSetting(dgvSiparisRapor);
+            DatagridviewSetting(dgvSiparisDetayRapor);
         }
 
         private void FrmRapor_FormClosed(object sender, FormClosedEventArgs e)
@@ -39,6 +41,21 @@ namespace CafeAutomation.App.Forms
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "MM/dd/yyyy";
             RaporSiparis();
+        }
+
+        public void DatagridviewSetting(DataGridView datagridview)
+        {
+            datagridview.RowHeadersVisible = false;
+            datagridview.BorderStyle = BorderStyle.None;
+            datagridview.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+            datagridview.DefaultCellStyle.SelectionBackColor = Color.FromArgb(45, 45, 45);
+            datagridview.DefaultCellStyle.SelectionBackColor = Color.Blue;
+            datagridview.EnableHeadersVisualStyles = false;
+            datagridview.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            datagridview.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(40, 40, 40);
+            datagridview.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
+            datagridview.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            //datagridview.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private void RaporSiparis()
@@ -111,5 +128,7 @@ namespace CafeAutomation.App.Forms
             dgvSiparisRapor.Columns[2].HeaderText = "SAAT";
             dgvSiparisRapor.Columns[3].HeaderText = "TOPLAM TUTAR";
         }
+
+       
     }
 }
