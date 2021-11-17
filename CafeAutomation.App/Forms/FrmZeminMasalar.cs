@@ -35,19 +35,21 @@ namespace CafeAutomation.App.Forms
             }
         }
 
-        private FrmSiparis frmSiparis;
+        private FrmSiparisZemin frmSiparisZemin;
         protected void YeniButon_Click(object sender, EventArgs e)
         {
-            if (frmSiparis == null || frmSiparis.IsDisposed)
+            if (frmSiparisZemin == null || frmSiparisZemin.IsDisposed)
             {
-                frmSiparis = new FrmSiparis();
+                frmSiparisZemin = new FrmSiparisZemin();
             }
-            frmSiparis.MdiParent = this;
-            frmSiparis.Show();
+            frmSiparisZemin.MdiParent = this;
+            frmSiparisZemin.Show();
 
-            frmSiparis.lblMasaIsmi.Text = "zeminMasa1.Name";
-            frmSiparis.SiparisleriGetir();
-            frmSiparis.ToplamTutarHesaplama();
+            var btn = sender as Button;
+            frmSiparisZemin.lblMasaIsmi.Text = btn.Name;
+
+            frmSiparisZemin.SiparisleriGetir();
+            frmSiparisZemin.ToplamTutarHesaplama();
             ButonlarıGizle();
         }
 
@@ -76,18 +78,17 @@ namespace CafeAutomation.App.Forms
 
         private void FrmZeminMasalar_Load(object sender, EventArgs e)
         {
-            MasaKontrol();
-            //------------------------------------------------
             flpZeminMasalar.Controls.Clear();
             ZeminMasaContext.Load();
             MasalariGetir();
+            MasaKontrol();
         }
 
         private void MasaKontrol()
         {
             SiparisDetayContext.Load();
             int sayac = 0;
-            foreach (Control item in this.Controls)
+            foreach (Control item in this.flpZeminMasalar.Controls)
             {
                 if (item is Button)
                 {
