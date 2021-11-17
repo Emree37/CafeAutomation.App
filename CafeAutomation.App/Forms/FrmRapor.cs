@@ -46,8 +46,7 @@ namespace CafeAutomation.App.Forms
             RaporContext.Load();
             KapatilanSiparislerContext.Load();
             GüneGöreRaporla();
-            //dgvSiparisRapor.DataSource = RaporContext.Raporlar;
-            dgvSiparisRapor.ClearSelection();
+            //dgvSiparisRapor.ClearSelection();
         }
 
         private List<Rapor> GünRaporu = new List<Rapor>();
@@ -94,6 +93,23 @@ namespace CafeAutomation.App.Forms
             x.TarihGun == selected.Cells[1].Value.ToString() &&
             x.TarihSaat == selected.Cells[2].Value.ToString()).ToList();
             dgvSiparisDetayRapor.DataSource = KapatilanSiparisler;
+            GridAyari();
+        }
+
+        private void GridAyari()
+        {
+            dgvSiparisDetayRapor.Columns[0].HeaderText = "ÜRÜN ADI";
+            dgvSiparisDetayRapor.Columns[1].HeaderText = "FİYAT";
+            dgvSiparisDetayRapor.Columns[2].HeaderText = "ADET";
+            dgvSiparisDetayRapor.Columns[3].HeaderText = "TUTAR(₺)";
+            dgvSiparisDetayRapor.Columns["MasaIsmi"].Visible = false;
+            dgvSiparisDetayRapor.Columns["TarihGun"].Visible = false;
+            dgvSiparisDetayRapor.Columns["TarihSaat"].Visible = false;
+
+            dgvSiparisRapor.Columns[0].HeaderText = "MASA İSMİ";
+            dgvSiparisRapor.Columns[1].HeaderText = "GÜN";
+            dgvSiparisRapor.Columns[2].HeaderText = "SAAT";
+            dgvSiparisRapor.Columns[3].HeaderText = "TOPLAM TUTAR";
         }
     }
 }

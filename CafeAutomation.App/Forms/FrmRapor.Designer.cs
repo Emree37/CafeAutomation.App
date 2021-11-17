@@ -42,12 +42,15 @@ namespace CafeAutomation.App.Forms
             // 
             this.dgvSiparisRapor.AllowUserToAddRows = false;
             this.dgvSiparisRapor.AllowUserToDeleteRows = false;
+            this.dgvSiparisRapor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSiparisRapor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSiparisRapor.Location = new System.Drawing.Point(13, 22);
+            this.dgvSiparisRapor.MultiSelect = false;
             this.dgvSiparisRapor.Name = "dgvSiparisRapor";
             this.dgvSiparisRapor.ReadOnly = true;
             this.dgvSiparisRapor.RowTemplate.Height = 25;
-            this.dgvSiparisRapor.Size = new System.Drawing.Size(368, 230);
+            this.dgvSiparisRapor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSiparisRapor.Size = new System.Drawing.Size(650, 250);
             this.dgvSiparisRapor.TabIndex = 0;
             this.dgvSiparisRapor.SelectionChanged += new System.EventHandler(this.dgvSiparisRapor_SelectionChanged);
             // 
@@ -55,12 +58,15 @@ namespace CafeAutomation.App.Forms
             // 
             this.dgvSiparisDetayRapor.AllowUserToAddRows = false;
             this.dgvSiparisDetayRapor.AllowUserToDeleteRows = false;
+            this.dgvSiparisDetayRapor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSiparisDetayRapor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSiparisDetayRapor.Location = new System.Drawing.Point(387, 22);
+            this.dgvSiparisDetayRapor.Location = new System.Drawing.Point(680, 22);
+            this.dgvSiparisDetayRapor.MultiSelect = false;
             this.dgvSiparisDetayRapor.Name = "dgvSiparisDetayRapor";
             this.dgvSiparisDetayRapor.ReadOnly = true;
             this.dgvSiparisDetayRapor.RowTemplate.Height = 25;
-            this.dgvSiparisDetayRapor.Size = new System.Drawing.Size(386, 230);
+            this.dgvSiparisDetayRapor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSiparisDetayRapor.Size = new System.Drawing.Size(650, 250);
             this.dgvSiparisDetayRapor.TabIndex = 1;
             // 
             // dateTimePicker1
@@ -93,7 +99,7 @@ namespace CafeAutomation.App.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1010, 450);
             this.Controls.Add(this.lblGunToplamTutar);
             this.Controls.Add(this.lblSecilenGunIsmi);
             this.Controls.Add(this.dateTimePicker1);
