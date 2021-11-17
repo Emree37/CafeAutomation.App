@@ -245,7 +245,7 @@ namespace CafeAutomation.App.Forms
             var pi = new ProcessStartInfo("yazdir.txt");
             pi.UseShellExecute = true;
             pi.Verb = "print";
-            var process = System.Diagnostics.Process.Start(pi);
+            //var process = System.Diagnostics.Process.Start(pi);
 
             MessageBox.Show("YAZDIRILIYOR...");
         }
