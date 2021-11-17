@@ -31,7 +31,6 @@ namespace CafeAutomation.App
             Application.Exit();
         }
 
-        
 
         private FrmUrunler frmUrunler;
         private void üRÜNLERToolStripMenuItem_Click(object sender, EventArgs e)

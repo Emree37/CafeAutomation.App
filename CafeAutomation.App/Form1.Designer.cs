@@ -42,6 +42,7 @@ namespace CafeAutomation.App
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Silver;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mASALARToolStripMenuItem,
             this.üRÜNLERToolStripMenuItem,
@@ -65,21 +66,21 @@ namespace CafeAutomation.App
             // bAHÇEKATIToolStripMenuItem
             // 
             this.bAHÇEKATIToolStripMenuItem.Name = "bAHÇEKATIToolStripMenuItem";
-            this.bAHÇEKATIToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.bAHÇEKATIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bAHÇEKATIToolStripMenuItem.Text = "BAHÇE KATI";
             this.bAHÇEKATIToolStripMenuItem.Click += new System.EventHandler(this.bAHÇEKATIToolStripMenuItem_Click);
             // 
             // zEMİNKATToolStripMenuItem
             // 
             this.zEMİNKATToolStripMenuItem.Name = "zEMİNKATToolStripMenuItem";
-            this.zEMİNKATToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.zEMİNKATToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.zEMİNKATToolStripMenuItem.Text = "ZEMİN KAT";
             this.zEMİNKATToolStripMenuItem.Click += new System.EventHandler(this.zEMİNKATToolStripMenuItem_Click);
             // 
             // tERASToolStripMenuItem
             // 
             this.tERASToolStripMenuItem.Name = "tERASToolStripMenuItem";
-            this.tERASToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.tERASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tERASToolStripMenuItem.Text = "TERAS";
             this.tERASToolStripMenuItem.Click += new System.EventHandler(this.tERASToolStripMenuItem_Click);
             // 
@@ -101,6 +102,7 @@ namespace CafeAutomation.App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1120, 562);
