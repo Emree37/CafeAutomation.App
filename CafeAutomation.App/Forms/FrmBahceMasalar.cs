@@ -59,6 +59,18 @@ namespace CafeAutomation.App.Forms
                 {
                     item.Visible = false;
                 }
+                if (item is FlowLayoutPanel)
+                {
+                    item.Visible = false;
+                }
+                if(item is TextBox)
+                {
+                    item.Visible = false;
+                }
+                if (item is Label)
+                {
+                    item.Visible = false;
+                }
             }
         }
 

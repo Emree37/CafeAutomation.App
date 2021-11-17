@@ -42,6 +42,15 @@ namespace CafeAutomation.App
             frmUrunler.Show();
         }
 
+        private FrmRapor frmRapor;
+        private void rAPORLARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmRapor == null || frmRapor.IsDisposed)
+                frmRapor = new FrmRapor();
+            //frmUrunler.MdiParent = this;
+            frmRapor.Show();
+        }
+
         private FrmBahceMasalar frmBahceMasalar;
         private void bAHÇEKATIToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -65,5 +74,7 @@ namespace CafeAutomation.App
                 frmTerasMasalar = new FrmTerasMasalar();
             frmTerasMasalar.Show();
         }
+
+        
     }
 }

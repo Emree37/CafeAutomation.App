@@ -38,7 +38,6 @@ namespace CafeAutomation.App.Forms
             // 
             // flpBahceMasalar
             // 
-            this.flpBahceMasalar.Dock = System.Windows.Forms.DockStyle.Right;
             this.flpBahceMasalar.Location = new System.Drawing.Point(175, 0);
             this.flpBahceMasalar.Name = "flpBahceMasalar";
             this.flpBahceMasalar.Size = new System.Drawing.Size(892, 497);

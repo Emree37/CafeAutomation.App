@@ -73,7 +73,7 @@ namespace CafeAutomation.App.Forms
             // lblToplamTutar
             // 
             this.lblToplamTutar.AutoSize = true;
-            this.lblToplamTutar.Location = new System.Drawing.Point(563, 400);
+            this.lblToplamTutar.Location = new System.Drawing.Point(756, 263);
             this.lblToplamTutar.Name = "lblToplamTutar";
             this.lblToplamTutar.Size = new System.Drawing.Size(0, 15);
             this.lblToplamTutar.TabIndex = 2;
@@ -205,7 +205,7 @@ namespace CafeAutomation.App.Forms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(668, 258);
+            this.label3.Location = new System.Drawing.Point(627, 258);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 15);
             this.label3.TabIndex = 14;
@@ -231,8 +231,11 @@ namespace CafeAutomation.App.Forms
             this.Controls.Add(this.lblToplamTutar);
             this.Controls.Add(this.dgvListe);
             this.Controls.Add(this.lblMasaIsmi);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmSiparis";
             this.Text = "FrmSiparis";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmSiparis_FormClosed);
             this.Load += new System.EventHandler(this.FrmSiparis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).EndInit();

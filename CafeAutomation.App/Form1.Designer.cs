@@ -95,6 +95,7 @@ namespace CafeAutomation.App
             this.rAPORLARToolStripMenuItem.Name = "rAPORLARToolStripMenuItem";
             this.rAPORLARToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.rAPORLARToolStripMenuItem.Text = "RAPORLAR";
+            this.rAPORLARToolStripMenuItem.Click += new System.EventHandler(this.rAPORLARToolStripMenuItem_Click);
             // 
             // Form1
             // 
