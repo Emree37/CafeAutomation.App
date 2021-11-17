@@ -57,10 +57,7 @@ namespace CafeAutomation.App.Forms
             txtKategori.Text = seciliUrun.Kategori;
         }
 
-        private void btnCikis_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
@@ -79,5 +76,9 @@ namespace CafeAutomation.App.Forms
             UrunContext.Save();
         }
 
+        private void btnGeriDon_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
