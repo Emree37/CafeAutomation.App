@@ -108,6 +108,6 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.TextBox txtMasaNumarasi;
         private System.Windows.Forms.Button btnTerasMasaEkle;
         private System.Windows.Forms.Button btnTerasMasaSil;
-        private System.Windows.Forms.FlowLayoutPanel flpTerasMasalar;
+        public System.Windows.Forms.FlowLayoutPanel flpTerasMasalar;
     }
 }

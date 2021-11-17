@@ -40,11 +40,11 @@ namespace CafeAutomation.App.Forms
             this.btnMasayiKapat = new System.Windows.Forms.Button();
             this.txtAdet = new System.Windows.Forms.TextBox();
             this.cmbUrunler = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvListe = new System.Windows.Forms.DataGridView();
             this.lblMasaIsmi = new System.Windows.Forms.Label();
             this.lblToplamTutar = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -66,6 +66,7 @@ namespace CafeAutomation.App.Forms
             this.btnFastFood.TabIndex = 1;
             this.btnFastFood.Text = "Fast Food";
             this.btnFastFood.UseVisualStyleBackColor = true;
+            this.btnFastFood.Click += new System.EventHandler(this.btnFastFood_Click);
             // 
             // btnCorbalar
             // 
@@ -75,6 +76,7 @@ namespace CafeAutomation.App.Forms
             this.btnCorbalar.TabIndex = 0;
             this.btnCorbalar.Text = "Çorbalar";
             this.btnCorbalar.UseVisualStyleBackColor = true;
+            this.btnCorbalar.Click += new System.EventHandler(this.btnCorbalar_Click);
             // 
             // btnEkle
             // 
@@ -84,6 +86,7 @@ namespace CafeAutomation.App.Forms
             this.btnEkle.TabIndex = 2;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnIptal
             // 
@@ -93,6 +96,7 @@ namespace CafeAutomation.App.Forms
             this.btnIptal.TabIndex = 3;
             this.btnIptal.Text = "İptal";
             this.btnIptal.UseVisualStyleBackColor = true;
+            this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // btnSil
             // 
@@ -102,6 +106,7 @@ namespace CafeAutomation.App.Forms
             this.btnSil.TabIndex = 4;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnGeriDön
             // 
@@ -111,6 +116,7 @@ namespace CafeAutomation.App.Forms
             this.btnGeriDön.TabIndex = 5;
             this.btnGeriDön.Text = "Geri Dön";
             this.btnGeriDön.UseVisualStyleBackColor = true;
+            this.btnGeriDön.Click += new System.EventHandler(this.btnGeriDön_Click);
             // 
             // btnAdisyon
             // 
@@ -120,15 +126,17 @@ namespace CafeAutomation.App.Forms
             this.btnAdisyon.TabIndex = 6;
             this.btnAdisyon.Text = "btnAdisyon";
             this.btnAdisyon.UseVisualStyleBackColor = true;
+            this.btnAdisyon.Click += new System.EventHandler(this.btnAdisyon_Click);
             // 
             // btnMasayiKapat
             // 
-            this.btnMasayiKapat.Location = new System.Drawing.Point(584, 331);
+            this.btnMasayiKapat.Location = new System.Drawing.Point(584, 359);
             this.btnMasayiKapat.Name = "btnMasayiKapat";
             this.btnMasayiKapat.Size = new System.Drawing.Size(80, 29);
             this.btnMasayiKapat.TabIndex = 7;
             this.btnMasayiKapat.Text = "Masayı Kapat";
             this.btnMasayiKapat.UseVisualStyleBackColor = true;
+            this.btnMasayiKapat.Click += new System.EventHandler(this.btnMasayiKapat_Click);
             // 
             // txtAdet
             // 
@@ -145,17 +153,19 @@ namespace CafeAutomation.App.Forms
             this.cmbUrunler.Size = new System.Drawing.Size(121, 23);
             this.cmbUrunler.TabIndex = 9;
             // 
-            // dataGridView1
+            // dgvListe
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(307, 72);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(429, 197);
-            this.dataGridView1.TabIndex = 10;
+            this.dgvListe.AllowUserToAddRows = false;
+            this.dgvListe.AllowUserToDeleteRows = false;
+            this.dgvListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListe.Location = new System.Drawing.Point(307, 72);
+            this.dgvListe.MultiSelect = false;
+            this.dgvListe.Name = "dgvListe";
+            this.dgvListe.ReadOnly = true;
+            this.dgvListe.RowTemplate.Height = 25;
+            this.dgvListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvListe.Size = new System.Drawing.Size(429, 197);
+            this.dgvListe.TabIndex = 10;
             // 
             // lblMasaIsmi
             // 
@@ -182,7 +192,7 @@ namespace CafeAutomation.App.Forms
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblToplamTutar);
             this.Controls.Add(this.lblMasaIsmi);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvListe);
             this.Controls.Add(this.cmbUrunler);
             this.Controls.Add(this.txtAdet);
             this.Controls.Add(this.btnMasayiKapat);
@@ -194,8 +204,10 @@ namespace CafeAutomation.App.Forms
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmSiparisTeras";
             this.Text = "FrmSiparisTeras";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmSiparisTeras_FormClosed);
+            this.Load += new System.EventHandler(this.FrmSiparisTeras_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,7 +226,7 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.Button btnMasayiKapat;
         private System.Windows.Forms.TextBox txtAdet;
         private System.Windows.Forms.ComboBox cmbUrunler;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvListe;
         private System.Windows.Forms.Label lblToplamTutar;
         public System.Windows.Forms.Label lblMasaIsmi;
     }

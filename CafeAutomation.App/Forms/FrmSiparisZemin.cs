@@ -187,43 +187,42 @@ namespace CafeAutomation.App.Forms
 
         private void btnAdisyon_Click(object sender, EventArgs e)
         {
-            Rapor rapor = new Rapor()
+            using (System.IO.StreamWriter file =
+         new System.IO.StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + $"/yazdir{lblMasaIsmi.Text}.txt", false))
             {
-                MasaIsmi = lblMasaIsmi.Text,
-                //Tarih = DateTime.Now.ToShortDateString(),
-                TarihGun = DateTime.Now.ToString("MM/dd/yyyy"),
-                TarihSaat = DateTime.Now.ToString("HH:mm:ss"),
-                ToplamTutar = lblToplamTutar.Text
-            };
-            RaporContext.Raporlar.Add(rapor);
-            RaporContext.Save();
+                file.WriteLine("   ----------  CAFE AUTOMATİON  ----------   ");
+                file.WriteLine("MASA İSMİ: " + lblMasaIsmi.Text);
+                file.WriteLine("--- Masa Detay : ---");
+                file.WriteLine(" |     Ürün    |    Fiyat    |     Adet   ");
+                string lines = "";
 
-            seciliMasa = lblMasaIsmi.Text;
-            for (int i = 0; i < SiparisDetayContext.SiparisDetaylar.Count; i++)
-            {
-                if (SiparisDetayContext.SiparisDetaylar[i].MasaIsmi == seciliMasa)
+                for (int row = 0; row < SiparisDetayContext.SiparisDetaylar.Count; row++)
                 {
-                    KapatilanSiparisler kapatilanSiparisler = new KapatilanSiparisler()
+                    for (int col = 0; col < 3; col++)
                     {
-                        UrunAdi = SiparisDetayContext.SiparisDetaylar[i].UrunAdi,
-                        Fiyat = SiparisDetayContext.SiparisDetaylar[i].Fiyat,
-                        Adet = SiparisDetayContext.SiparisDetaylar[i].Adet,
-                        TutarTL = SiparisDetayContext.SiparisDetaylar[i].TutarTL,
-                        MasaIsmi = SiparisDetayContext.SiparisDetaylar[i].MasaIsmi,
-                        TarihGun = DateTime.Now.ToString("MM/dd/yyyy"),
-                        TarihSaat = DateTime.Now.ToString("HH:mm:ss")
-                    };
-                    KapatilanSiparislerContext.KapatilanSiparisler.Add(kapatilanSiparisler);
-                    KapatilanSiparislerContext.Save();
 
-                    SiparisDetayContext.SiparisDetaylar.Remove(SiparisDetayContext.SiparisDetaylar[i]);
-                    SiparisDetayContext.Save();
+                        lines = lines + " | " + dgvListe.Rows[row].Cells[col].Value.ToString();
+                        if (col == 2)
+                        {
 
-                    i--;
+                            file.WriteLine(lines);
+                            lines = "";
+                        }
+                    }
+
                 }
+                file.WriteLine(" ------------------------");
+                file.WriteLine(" Toplam :" + lblToplamTutar.Text.ToString());
+
             }
-            MasaKontrol();
-            Close();
+
+
+            var pi = new ProcessStartInfo("yazdir.txt");
+            pi.UseShellExecute = true;
+            pi.Verb = "print";
+            var process = System.Diagnostics.Process.Start(pi);
+
+            MessageBox.Show("YAZDIRILIYOR...");
         }
 
         private void FrmSiparisZemin_FormClosed(object sender, FormClosedEventArgs e)

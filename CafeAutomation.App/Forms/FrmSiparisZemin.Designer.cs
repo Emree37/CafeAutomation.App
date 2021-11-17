@@ -189,6 +189,7 @@ namespace CafeAutomation.App.Forms
             this.dgvListe.AllowUserToDeleteRows = false;
             this.dgvListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListe.Location = new System.Drawing.Point(307, 85);
+            this.dgvListe.MultiSelect = false;
             this.dgvListe.Name = "dgvListe";
             this.dgvListe.ReadOnly = true;
             this.dgvListe.RowTemplate.Height = 25;

@@ -48,9 +48,8 @@ namespace CafeAutomation.App.Forms
             var btn = sender as Button;
             frmSiparisTeras.lblMasaIsmi.Text = btn.Name;
 
-            //frmSiparisTeras.SiparisleriGetir();
-            //frmSiparisTeras.ToplamTutarHesaplama();
-
+            frmSiparisTeras.SiparisleriGetir();
+            frmSiparisTeras.ToplamTutarHesaplama();
 
             ButonlarıGizle();
         }
