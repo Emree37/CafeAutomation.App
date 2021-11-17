@@ -189,8 +189,11 @@ namespace CafeAutomation.App.Forms
             this.Controls.Add(this.txtFiyat);
             this.Controls.Add(this.txtUrunAd);
             this.Controls.Add(this.lstUrunler);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmUrunler";
             this.Text = "FrmUrunler";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmUrunler_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

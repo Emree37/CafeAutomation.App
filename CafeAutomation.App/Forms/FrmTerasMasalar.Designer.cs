@@ -54,7 +54,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnTerasMasaEkle
             // 
-            this.btnTerasMasaEkle.Location = new System.Drawing.Point(198, 25);
+            this.btnTerasMasaEkle.Location = new System.Drawing.Point(92, 68);
             this.btnTerasMasaEkle.Name = "btnTerasMasaEkle";
             this.btnTerasMasaEkle.Size = new System.Drawing.Size(103, 23);
             this.btnTerasMasaEkle.TabIndex = 9;
@@ -64,7 +64,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnTerasMasaSil
             // 
-            this.btnTerasMasaSil.Location = new System.Drawing.Point(307, 25);
+            this.btnTerasMasaSil.Location = new System.Drawing.Point(92, 116);
             this.btnTerasMasaSil.Name = "btnTerasMasaSil";
             this.btnTerasMasaSil.Size = new System.Drawing.Size(103, 23);
             this.btnTerasMasaSil.TabIndex = 10;
@@ -74,9 +74,10 @@ namespace CafeAutomation.App.Forms
             // 
             // flpTerasMasalar
             // 
-            this.flpTerasMasalar.Location = new System.Drawing.Point(13, 50);
+            this.flpTerasMasalar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flpTerasMasalar.Location = new System.Drawing.Point(283, 0);
             this.flpTerasMasalar.Name = "flpTerasMasalar";
-            this.flpTerasMasalar.Size = new System.Drawing.Size(775, 350);
+            this.flpTerasMasalar.Size = new System.Drawing.Size(517, 450);
             this.flpTerasMasalar.TabIndex = 11;
             // 
             // FrmTerasMasalar
@@ -89,8 +90,12 @@ namespace CafeAutomation.App.Forms
             this.Controls.Add(this.btnTerasMasaEkle);
             this.Controls.Add(this.txtMasaNumarasi);
             this.Controls.Add(this.label1);
+            this.IsMdiContainer = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmTerasMasalar";
             this.Text = "FrmTerasMasalar";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmTerasMasalar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

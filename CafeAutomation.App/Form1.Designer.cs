@@ -65,21 +65,21 @@ namespace CafeAutomation.App
             // bAHÇEKATIToolStripMenuItem
             // 
             this.bAHÇEKATIToolStripMenuItem.Name = "bAHÇEKATIToolStripMenuItem";
-            this.bAHÇEKATIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bAHÇEKATIToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.bAHÇEKATIToolStripMenuItem.Text = "BAHÇE KATI";
             this.bAHÇEKATIToolStripMenuItem.Click += new System.EventHandler(this.bAHÇEKATIToolStripMenuItem_Click);
             // 
             // zEMİNKATToolStripMenuItem
             // 
             this.zEMİNKATToolStripMenuItem.Name = "zEMİNKATToolStripMenuItem";
-            this.zEMİNKATToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.zEMİNKATToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.zEMİNKATToolStripMenuItem.Text = "ZEMİN KAT";
             this.zEMİNKATToolStripMenuItem.Click += new System.EventHandler(this.zEMİNKATToolStripMenuItem_Click);
             // 
             // tERASToolStripMenuItem
             // 
             this.tERASToolStripMenuItem.Name = "tERASToolStripMenuItem";
-            this.tERASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tERASToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.tERASToolStripMenuItem.Text = "TERAS";
             this.tERASToolStripMenuItem.Click += new System.EventHandler(this.tERASToolStripMenuItem_Click);
             // 
@@ -106,11 +106,13 @@ namespace CafeAutomation.App
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.menuStrip1.ResumeLayout(false);

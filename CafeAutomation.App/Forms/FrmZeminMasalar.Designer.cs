@@ -47,9 +47,10 @@ namespace CafeAutomation.App.Forms
             // 
             // flpZeminMasalar
             // 
-            this.flpZeminMasalar.Location = new System.Drawing.Point(13, 50);
+            this.flpZeminMasalar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flpZeminMasalar.Location = new System.Drawing.Point(190, 0);
             this.flpZeminMasalar.Name = "flpZeminMasalar";
-            this.flpZeminMasalar.Size = new System.Drawing.Size(775, 350);
+            this.flpZeminMasalar.Size = new System.Drawing.Size(610, 450);
             this.flpZeminMasalar.TabIndex = 5;
             // 
             // txtMasaNumarasi
@@ -61,7 +62,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnZeminMasaSil
             // 
-            this.btnZeminMasaSil.Location = new System.Drawing.Point(284, 18);
+            this.btnZeminMasaSil.Location = new System.Drawing.Point(69, 88);
             this.btnZeminMasaSil.Name = "btnZeminMasaSil";
             this.btnZeminMasaSil.Size = new System.Drawing.Size(103, 23);
             this.btnZeminMasaSil.TabIndex = 7;
@@ -71,7 +72,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnZeminMasaEkle
             // 
-            this.btnZeminMasaEkle.Location = new System.Drawing.Point(175, 17);
+            this.btnZeminMasaEkle.Location = new System.Drawing.Point(69, 50);
             this.btnZeminMasaEkle.Name = "btnZeminMasaEkle";
             this.btnZeminMasaEkle.Size = new System.Drawing.Size(103, 23);
             this.btnZeminMasaEkle.TabIndex = 8;
@@ -89,8 +90,12 @@ namespace CafeAutomation.App.Forms
             this.Controls.Add(this.txtMasaNumarasi);
             this.Controls.Add(this.flpZeminMasalar);
             this.Controls.Add(this.label1);
+            this.IsMdiContainer = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmZeminMasalar";
             this.Text = "FrmZeminMasalar";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmZeminMasalar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

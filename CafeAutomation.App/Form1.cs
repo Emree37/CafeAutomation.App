@@ -38,7 +38,7 @@ namespace CafeAutomation.App
         {
             if (frmUrunler == null || frmUrunler.IsDisposed)
                 frmUrunler = new FrmUrunler();
-            frmUrunler.MdiParent = this;
+            //frmUrunler.MdiParent = this;
             frmUrunler.Show();
         }
 
@@ -47,7 +47,6 @@ namespace CafeAutomation.App
         {
             if (frmBahceMasalar == null || frmBahceMasalar.IsDisposed)
                 frmBahceMasalar = new FrmBahceMasalar();
-            frmBahceMasalar.MdiParent = this;
             frmBahceMasalar.Show();
         }
 
@@ -56,7 +55,6 @@ namespace CafeAutomation.App
         {
             if (frmZeminMasalar == null || frmZeminMasalar.IsDisposed)
                 frmZeminMasalar = new FrmZeminMasalar();
-            frmZeminMasalar.MdiParent = this;
             frmZeminMasalar.Show();
         }
 
@@ -65,7 +63,6 @@ namespace CafeAutomation.App
         {
             if (frmTerasMasalar == null || frmTerasMasalar.IsDisposed)
                 frmTerasMasalar = new FrmTerasMasalar();
-            frmTerasMasalar.MdiParent = this;
             frmTerasMasalar.Show();
         }
     }
