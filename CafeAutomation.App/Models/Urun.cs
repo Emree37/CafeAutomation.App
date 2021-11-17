@@ -14,6 +14,6 @@ namespace CafeAutomation.App.Models
 
         public string Kategori { get; set; }
 
-        public override string ToString() => $"{UrunAdi}                             {Fiyat}₺                               {Kategori}";
+        public override string ToString() => $"ÜRÜN ADI:{UrunAdi}---------------------->FİYAT:{Fiyat}.00₺------------------------->KATEGORİ:{Kategori}";
     }
 }
