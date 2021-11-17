@@ -35,18 +35,68 @@ namespace CafeAutomation.App.Forms
             }
         }
 
+        private FrmSiparis frmSiparis;
         protected void YeniButon_Click(object sender,EventArgs e)
         {
-            //YeniForm açma ve butonları gösterme kodlarını buraya yaz
-            MessageBox.Show("Heyyyyy");
+            if(frmSiparis==null || frmSiparis.IsDisposed)
+            {
+                frmSiparis = new FrmSiparis();
+            }
+            frmSiparis.MdiParent = this;
+            frmSiparis.Show();
+
+            frmSiparis.lblMasaIsmi.Text = "bahceMasa1.Name";
+            frmSiparis.SiparisleriGetir();
+            frmSiparis.ToplamTutarHesaplama();
+            ButonlarıGizle();
+        }
+
+        private void ButonlarıGizle()
+        {
+            foreach (Control item in this.Controls)
+            {
+                if (item is Button)
+                {
+                    item.Visible = false;
+                }
+            }
         }
 
         private void FrmBahceMasalar_Load(object sender, EventArgs e)
         {
-            //MasaOlustur();
+            MasaKontrol();
+            //------------------------------------------------
             flpBahceMasalar.Controls.Clear();
             BahceMasaContext.Load();
             MasalariGetir();
+        }
+
+        private void MasaKontrol()
+        {
+            SiparisDetayContext.Load();
+            int sayac = 0;
+            foreach (Control item in this.Controls)
+            {
+                if (item is Button)
+                {
+                    for (int i = 0; i < SiparisDetayContext.SiparisDetaylar.Count; i++)
+                    {
+                        if (SiparisDetayContext.SiparisDetaylar[i].MasaIsmi == item.Name)
+                        {
+                            sayac++;
+                        }
+                    }
+                    if (sayac != 0)
+                    {
+                        item.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        item.BackColor = Color.Green;
+                    }
+                    sayac = 0;
+                }
+            }
         }
 
         private void btnMasaEkle_Click(object sender, EventArgs e)
@@ -59,30 +109,6 @@ namespace CafeAutomation.App.Forms
             BahceMasaContext.Save();
             MasalariGetir();
         }
-
-        //private void MasaOlustur()
-        //{
-        //    for (int i = 1; i < 11; i++)
-        //    {
-        //        Button ilkButon = new Button
-        //        {
-        //            Name = $"bahceMasa{i}",
-        //            Text = $"Bahçe Masa - {i}",
-        //            Height = 80,
-        //            Width = 80
-        //        };
-        //        flpBahceMasalar.Controls.Add(ilkButon);
-        //    }
-        //    for (int i = 1; i < 11; i++)
-        //    {
-        //        BahceMasa ilkMasalar = new BahceMasa()
-        //        {
-        //            BahceMasaNumarası = i.ToString()
-        //        };
-        //        BahceMasaContext.BahceMasalar.Add(ilkMasalar);
-        //    }
-        //    BahceMasaContext.Save();
-        //}
 
         private BahceMasa silinecekBahceMasa;
         private void btnMasaSil_Click(object sender, EventArgs e)

@@ -35,26 +35,68 @@ namespace CafeAutomation.App.Forms
             }
         }
 
-        private void YeniButon_Click(object sender, EventArgs e)
+        private FrmSiparis frmSiparis;
+        protected void YeniButon_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Heyyyy");
+            if (frmSiparis == null || frmSiparis.IsDisposed)
+            {
+                frmSiparis = new FrmSiparis();
+            }
+            frmSiparis.MdiParent = this;
+            frmSiparis.Show();
+
+            frmSiparis.lblMasaIsmi.Text = "terasMasa1.Name";
+            frmSiparis.SiparisleriGetir();
+            frmSiparis.ToplamTutarHesaplama();
+            ButonlarıGizle();
+        }
+
+        private void ButonlarıGizle()
+        {
+            foreach (Control item in this.Controls)
+            {
+                if (item is Button)
+                {
+                    item.Visible = false;
+                }
+            }
         }
 
         private void FrmTerasMasalar_Load(object sender, EventArgs e)
         {
-            //MasaOlustur();
+            MasaKontrol();
+            //------------------------------------------------
             flpTerasMasalar.Controls.Clear();
             TerasMasaContext.Load();
             MasalariGetir();
         }
 
-        private TerasMasa silinecekTerasMasa;
-        private void btnTerasMasaSil_Click(object sender, EventArgs e)
+        private void MasaKontrol()
         {
-            silinecekTerasMasa = TerasMasaContext.TerasMasalar.Find(x => x.TerasMasaNumarası == txtMasaNumarasi.Text);
-            TerasMasaContext.TerasMasalar.Remove(silinecekTerasMasa);
-            TerasMasaContext.Save();
-            MasalariGetir();
+            SiparisDetayContext.Load();
+            int sayac = 0;
+            foreach (Control item in this.Controls)
+            {
+                if (item is Button)
+                {
+                    for (int i = 0; i < SiparisDetayContext.SiparisDetaylar.Count; i++)
+                    {
+                        if (SiparisDetayContext.SiparisDetaylar[i].MasaIsmi == item.Name)
+                        {
+                            sayac++;
+                        }
+                    }
+                    if (sayac != 0)
+                    {
+                        item.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        item.BackColor = Color.Green;
+                    }
+                    sayac = 0;
+                }
+            }
         }
 
         private void btnTerasMasaEkle_Click(object sender, EventArgs e)
@@ -68,28 +110,13 @@ namespace CafeAutomation.App.Forms
             MasalariGetir();
         }
 
-        //private void MasaOlustur()
-        //{
-        //    for (int i = 1; i < 11; i++)
-        //    {
-        //        Button ilkButon = new Button
-        //        {
-        //            Name = $"terasMasa{i}",
-        //            Text = $"Teras Masa - {i}",
-        //            Height = 80,
-        //            Width = 80
-        //        };
-        //        flpTerasMasalar.Controls.Add(ilkButon);
-        //    }
-        //    for (int i = 1; i < 11; i++)
-        //    {
-        //        TerasMasa ilkMasalar = new TerasMasa()
-        //        {
-        //            TerasMasaNumarası = i.ToString()
-        //        };
-        //        TerasMasaContext.TerasMasalar.Add(ilkMasalar);
-        //    }
-        //    TerasMasaContext.Save();
-        //}
+        private TerasMasa silinecekTerasMasa;
+        private void btnTerasMasaSil_Click(object sender, EventArgs e)
+        {
+            silinecekTerasMasa = TerasMasaContext.TerasMasalar.Find(x => x.TerasMasaNumarası == txtMasaNumarasi.Text);
+            TerasMasaContext.TerasMasalar.Remove(silinecekTerasMasa);
+            TerasMasaContext.Save();
+            MasalariGetir();
+        }
     }
 }

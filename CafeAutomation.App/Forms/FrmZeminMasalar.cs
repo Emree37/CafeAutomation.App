@@ -35,18 +35,68 @@ namespace CafeAutomation.App.Forms
             }
         }
 
-        private void YeniButon_Click(object sender, EventArgs e)
+        private FrmSiparis frmSiparis;
+        protected void YeniButon_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Heyyyy");
+            if (frmSiparis == null || frmSiparis.IsDisposed)
+            {
+                frmSiparis = new FrmSiparis();
+            }
+            frmSiparis.MdiParent = this;
+            frmSiparis.Show();
+
+            frmSiparis.lblMasaIsmi.Text = "zeminMasa1.Name";
+            frmSiparis.SiparisleriGetir();
+            frmSiparis.ToplamTutarHesaplama();
+            ButonlarıGizle();
         }
 
-        private ZeminMasa silinecekZeminMasa;
-        private void btnZeminMasaSil_Click(object sender, EventArgs e)
+        private void ButonlarıGizle()
         {
-            silinecekZeminMasa = ZeminMasaContext.ZeminMasalar.Find(x => x.ZeminMasaNumarası == txtMasaNumarasi.Text);
-            ZeminMasaContext.ZeminMasalar.Remove(silinecekZeminMasa);
-            ZeminMasaContext.Save();
+            foreach (Control item in this.Controls)
+            {
+                if (item is Button)
+                {
+                    item.Visible = false;
+                }
+            }
+        }
+
+        private void FrmZeminMasalar_Load(object sender, EventArgs e)
+        {
+            MasaKontrol();
+            //------------------------------------------------
+            flpZeminMasalar.Controls.Clear();
+            ZeminMasaContext.Load();
             MasalariGetir();
+        }
+
+        private void MasaKontrol()
+        {
+            SiparisDetayContext.Load();
+            int sayac = 0;
+            foreach (Control item in this.Controls)
+            {
+                if (item is Button)
+                {
+                    for (int i = 0; i < SiparisDetayContext.SiparisDetaylar.Count; i++)
+                    {
+                        if (SiparisDetayContext.SiparisDetaylar[i].MasaIsmi == item.Name)
+                        {
+                            sayac++;
+                        }
+                    }
+                    if (sayac != 0)
+                    {
+                        item.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        item.BackColor = Color.Green;
+                    }
+                    sayac = 0;
+                }
+            }
         }
 
         private void btnZeminMasaEkle_Click(object sender, EventArgs e)
@@ -60,36 +110,12 @@ namespace CafeAutomation.App.Forms
             MasalariGetir();
         }
 
-        //private void MasaOlustur()
-        //{
-        //    for (int i = 1; i < 11; i++)
-        //    {
-        //        Button ilkButon = new Button
-        //        {
-        //            Name = $"zeminMasa{i}",
-        //            Text = $"Zemin Masa - {i}",
-        //            Height = 80,
-        //            Width = 80
-        //        };
-        //        flpZeminMasalar.Controls.Add(ilkButon);
-        //    }
-        //    for (int i = 1; i < 11; i++)
-        //    {
-        //        ZeminMasa ilkMasalar = new ZeminMasa()
-        //        {
-        //            ZeminMasaNumarası = i.ToString()
-        //        };
-        //        ZeminMasaContext.ZeminMasalar.Add(ilkMasalar);
-        //    }
-        //    ZeminMasaContext.Save();
-        //}
-
-
-        private void FrmZeminMasalar_Load(object sender, EventArgs e)
+        private ZeminMasa silinecekZeminMasa;
+        private void btnZeminMasaSil_Click(object sender, EventArgs e)
         {
-            //MasaOlustur();
-            flpZeminMasalar.Controls.Clear();
-            ZeminMasaContext.Load();
+            silinecekZeminMasa = ZeminMasaContext.ZeminMasalar.Find(x => x.ZeminMasaNumarası == txtMasaNumarasi.Text);
+            ZeminMasaContext.ZeminMasalar.Remove(silinecekZeminMasa);
+            ZeminMasaContext.Save();
             MasalariGetir();
         }
     }
