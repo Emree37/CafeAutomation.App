@@ -51,68 +51,72 @@ namespace CafeAutomation.App.Forms
             this.lblMasaIsmi = new System.Windows.Forms.Label();
             this.lblToplamTutar = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSogukIcecekler
             // 
-            this.btnSogukIcecekler.Location = new System.Drawing.Point(36, 168);
+            this.btnSogukIcecekler.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSogukIcecekler.BackgroundImage")));
+            this.btnSogukIcecekler.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSogukIcecekler.Location = new System.Drawing.Point(213, 134);
             this.btnSogukIcecekler.Name = "btnSogukIcecekler";
-            this.btnSogukIcecekler.Size = new System.Drawing.Size(84, 41);
+            this.btnSogukIcecekler.Size = new System.Drawing.Size(122, 72);
             this.btnSogukIcecekler.TabIndex = 5;
-            this.btnSogukIcecekler.Text = "SOĞUK İÇECEKLER";
             this.btnSogukIcecekler.UseVisualStyleBackColor = true;
             this.btnSogukIcecekler.Click += new System.EventHandler(this.btnSogukIcecekler_Click);
             // 
             // btnSicakIcecekler
             // 
-            this.btnSicakIcecekler.Location = new System.Drawing.Point(144, 168);
+            this.btnSicakIcecekler.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSicakIcecekler.BackgroundImage")));
+            this.btnSicakIcecekler.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSicakIcecekler.Location = new System.Drawing.Point(353, 134);
             this.btnSicakIcecekler.Name = "btnSicakIcecekler";
-            this.btnSicakIcecekler.Size = new System.Drawing.Size(82, 41);
+            this.btnSicakIcecekler.Size = new System.Drawing.Size(128, 72);
             this.btnSicakIcecekler.TabIndex = 4;
-            this.btnSicakIcecekler.Text = "SICAK İÇECEKLER";
             this.btnSicakIcecekler.UseVisualStyleBackColor = true;
             this.btnSicakIcecekler.Click += new System.EventHandler(this.btnSicakIcecekler_Click);
             // 
             // btnTatlilar
             // 
-            this.btnTatlilar.Location = new System.Drawing.Point(142, 86);
+            this.btnTatlilar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTatlilar.BackgroundImage")));
+            this.btnTatlilar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTatlilar.Location = new System.Drawing.Point(69, 134);
             this.btnTatlilar.Name = "btnTatlilar";
-            this.btnTatlilar.Size = new System.Drawing.Size(84, 41);
+            this.btnTatlilar.Size = new System.Drawing.Size(127, 72);
             this.btnTatlilar.TabIndex = 3;
-            this.btnTatlilar.Text = "TATLILAR";
             this.btnTatlilar.UseVisualStyleBackColor = true;
             this.btnTatlilar.Click += new System.EventHandler(this.btnTatlilar_Click);
             // 
             // btnYemekler
             // 
-            this.btnYemekler.Location = new System.Drawing.Point(38, 86);
+            this.btnYemekler.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnYemekler.BackgroundImage")));
+            this.btnYemekler.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnYemekler.Location = new System.Drawing.Point(353, 12);
             this.btnYemekler.Name = "btnYemekler";
-            this.btnYemekler.Size = new System.Drawing.Size(82, 41);
+            this.btnYemekler.Size = new System.Drawing.Size(115, 101);
             this.btnYemekler.TabIndex = 2;
-            this.btnYemekler.Text = "YEMEKLER";
             this.btnYemekler.UseVisualStyleBackColor = true;
             this.btnYemekler.Click += new System.EventHandler(this.btnYemekler_Click);
             // 
             // btnFastFood
             // 
-            this.btnFastFood.Location = new System.Drawing.Point(142, 17);
+            this.btnFastFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFastFood.BackgroundImage")));
+            this.btnFastFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFastFood.Location = new System.Drawing.Point(213, 12);
             this.btnFastFood.Name = "btnFastFood";
-            this.btnFastFood.Size = new System.Drawing.Size(84, 41);
+            this.btnFastFood.Size = new System.Drawing.Size(122, 101);
             this.btnFastFood.TabIndex = 1;
-            this.btnFastFood.Text = "FAST FOOD";
             this.btnFastFood.UseVisualStyleBackColor = true;
             this.btnFastFood.Click += new System.EventHandler(this.btnFastFood_Click_1);
             // 
             // btnCorbalar
             // 
-            this.btnCorbalar.Location = new System.Drawing.Point(38, 17);
+            this.btnCorbalar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCorbalar.BackgroundImage")));
+            this.btnCorbalar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCorbalar.Location = new System.Drawing.Point(69, 12);
             this.btnCorbalar.Name = "btnCorbalar";
-            this.btnCorbalar.Size = new System.Drawing.Size(82, 41);
+            this.btnCorbalar.Size = new System.Drawing.Size(127, 101);
             this.btnCorbalar.TabIndex = 0;
-            this.btnCorbalar.Text = "ÇORBALAR";
             this.btnCorbalar.UseVisualStyleBackColor = true;
             this.btnCorbalar.Click += new System.EventHandler(this.btnCorbalar_Click_1);
             // 
@@ -276,20 +280,6 @@ namespace CafeAutomation.App.Forms
             this.label4.TabIndex = 15;
             this.label4.Text = "TOPLAM TUTAR :";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.btnSicakIcecekler);
-            this.panel1.Controls.Add(this.btnSogukIcecekler);
-            this.panel1.Controls.Add(this.btnCorbalar);
-            this.panel1.Controls.Add(this.btnFastFood);
-            this.panel1.Controls.Add(this.btnTatlilar);
-            this.panel1.Controls.Add(this.btnYemekler);
-            this.panel1.Location = new System.Drawing.Point(253, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(273, 257);
-            this.panel1.TabIndex = 16;
-            // 
             // FrmSiparisZemin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -297,10 +287,15 @@ namespace CafeAutomation.App.Forms
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1370, 693);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnSicakIcecekler);
+            this.Controls.Add(this.btnSogukIcecekler);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnCorbalar);
+            this.Controls.Add(this.btnFastFood);
             this.Controls.Add(this.lblToplamTutar);
+            this.Controls.Add(this.btnTatlilar);
             this.Controls.Add(this.lblMasaIsmi);
+            this.Controls.Add(this.btnYemekler);
             this.Controls.Add(this.dgvListe);
             this.Controls.Add(this.cmbUrunler);
             this.Controls.Add(this.txtAdet);
@@ -321,7 +316,6 @@ namespace CafeAutomation.App.Forms
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmSiparisZemin_FormClosed);
             this.Load += new System.EventHandler(this.FrmSiparisZemin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,6 +343,5 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.Button btnTatlilar;
         private System.Windows.Forms.Button btnYemekler;
         public System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel1;
     }
 }

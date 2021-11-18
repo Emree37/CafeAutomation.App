@@ -89,11 +89,12 @@ namespace CafeAutomation.App.Forms
             // 
             // btnTatlilar
             // 
+            this.btnTatlilar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTatlilar.BackgroundImage")));
+            this.btnTatlilar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTatlilar.Location = new System.Drawing.Point(398, 135);
             this.btnTatlilar.Name = "btnTatlilar";
             this.btnTatlilar.Size = new System.Drawing.Size(150, 100);
             this.btnTatlilar.TabIndex = 2;
-            this.btnTatlilar.Text = "TATLILAR";
             this.btnTatlilar.UseVisualStyleBackColor = true;
             this.btnTatlilar.Click += new System.EventHandler(this.btnTatlilar_Click);
             // 
@@ -123,60 +124,65 @@ namespace CafeAutomation.App.Forms
             // 
             this.btnEkle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEkle.BackgroundImage")));
             this.btnEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEkle.Location = new System.Drawing.Point(749, 97);
+            this.btnEkle.Location = new System.Drawing.Point(749, 135);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(169, 84);
+            this.btnEkle.Size = new System.Drawing.Size(169, 100);
             this.btnEkle.TabIndex = 2;
             this.btnEkle.UseVisualStyleBackColor = true;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnIptal
             // 
-            this.btnIptal.Location = new System.Drawing.Point(305, 536);
+            this.btnIptal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIptal.BackgroundImage")));
+            this.btnIptal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIptal.Location = new System.Drawing.Point(305, 562);
             this.btnIptal.Name = "btnIptal";
             this.btnIptal.Size = new System.Drawing.Size(82, 59);
             this.btnIptal.TabIndex = 3;
-            this.btnIptal.Text = "İptal";
             this.btnIptal.UseVisualStyleBackColor = true;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(438, 536);
+            this.btnSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSil.BackgroundImage")));
+            this.btnSil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSil.Location = new System.Drawing.Point(438, 562);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(82, 59);
             this.btnSil.TabIndex = 4;
-            this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnGeriDön
             // 
-            this.btnGeriDön.Location = new System.Drawing.Point(550, 536);
+            this.btnGeriDön.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGeriDön.BackgroundImage")));
+            this.btnGeriDön.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGeriDön.Location = new System.Drawing.Point(550, 562);
             this.btnGeriDön.Name = "btnGeriDön";
             this.btnGeriDön.Size = new System.Drawing.Size(82, 59);
             this.btnGeriDön.TabIndex = 5;
-            this.btnGeriDön.Text = "Geri Dön";
             this.btnGeriDön.UseVisualStyleBackColor = true;
             this.btnGeriDön.Click += new System.EventHandler(this.btnGeriDön_Click);
             // 
             // btnAdisyon
             // 
-            this.btnAdisyon.Location = new System.Drawing.Point(692, 536);
+            this.btnAdisyon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdisyon.BackgroundImage")));
+            this.btnAdisyon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdisyon.Location = new System.Drawing.Point(692, 562);
             this.btnAdisyon.Name = "btnAdisyon";
             this.btnAdisyon.Size = new System.Drawing.Size(82, 59);
             this.btnAdisyon.TabIndex = 6;
-            this.btnAdisyon.Text = "btnAdisyon";
             this.btnAdisyon.UseVisualStyleBackColor = true;
             this.btnAdisyon.Click += new System.EventHandler(this.btnAdisyon_Click);
             // 
             // btnMasayiKapat
             // 
-            this.btnMasayiKapat.Location = new System.Drawing.Point(836, 536);
+            this.btnMasayiKapat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMasayiKapat.BackgroundImage")));
+            this.btnMasayiKapat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMasayiKapat.Location = new System.Drawing.Point(836, 562);
             this.btnMasayiKapat.Name = "btnMasayiKapat";
             this.btnMasayiKapat.Size = new System.Drawing.Size(82, 59);
             this.btnMasayiKapat.TabIndex = 7;
-            this.btnMasayiKapat.Text = "Masayı Kapat";
             this.btnMasayiKapat.UseVisualStyleBackColor = true;
             this.btnMasayiKapat.Click += new System.EventHandler(this.btnMasayiKapat_Click);
             // 
@@ -214,7 +220,7 @@ namespace CafeAutomation.App.Forms
             this.lblMasaIsmi.AutoSize = true;
             this.lblMasaIsmi.BackColor = System.Drawing.Color.Transparent;
             this.lblMasaIsmi.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMasaIsmi.Location = new System.Drawing.Point(305, 512);
+            this.lblMasaIsmi.Location = new System.Drawing.Point(306, 521);
             this.lblMasaIsmi.Name = "lblMasaIsmi";
             this.lblMasaIsmi.Size = new System.Drawing.Size(38, 15);
             this.lblMasaIsmi.TabIndex = 11;
@@ -225,7 +231,7 @@ namespace CafeAutomation.App.Forms
             this.lblToplamTutar.AutoSize = true;
             this.lblToplamTutar.BackColor = System.Drawing.Color.Transparent;
             this.lblToplamTutar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblToplamTutar.Location = new System.Drawing.Point(691, 512);
+            this.lblToplamTutar.Location = new System.Drawing.Point(836, 521);
             this.lblToplamTutar.Name = "lblToplamTutar";
             this.lblToplamTutar.Size = new System.Drawing.Size(38, 15);
             this.lblToplamTutar.TabIndex = 12;
@@ -236,7 +242,7 @@ namespace CafeAutomation.App.Forms
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(582, 512);
+            this.label1.Location = new System.Drawing.Point(690, 521);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 15);
             this.label1.TabIndex = 13;
