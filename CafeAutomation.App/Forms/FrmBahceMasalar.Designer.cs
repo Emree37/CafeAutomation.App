@@ -54,18 +54,20 @@ namespace CafeAutomation.App.Forms
             this.flpBahceMasalar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flpBahceMasalar.BackgroundImage")));
             this.flpBahceMasalar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flpBahceMasalar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flpBahceMasalar.Location = new System.Drawing.Point(370, 0);
+            this.flpBahceMasalar.Location = new System.Drawing.Point(636, 0);
+            this.flpBahceMasalar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flpBahceMasalar.Name = "flpBahceMasalar";
-            this.flpBahceMasalar.Size = new System.Drawing.Size(1000, 749);
+            this.flpBahceMasalar.Size = new System.Drawing.Size(1143, 999);
             this.flpBahceMasalar.TabIndex = 0;
             // 
             // btnMasaEkle
             // 
             this.btnMasaEkle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMasaEkle.BackgroundImage")));
             this.btnMasaEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMasaEkle.Location = new System.Drawing.Point(48, 307);
+            this.btnMasaEkle.Location = new System.Drawing.Point(219, 476);
+            this.btnMasaEkle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMasaEkle.Name = "btnMasaEkle";
-            this.btnMasaEkle.Size = new System.Drawing.Size(107, 103);
+            this.btnMasaEkle.Size = new System.Drawing.Size(122, 137);
             this.btnMasaEkle.TabIndex = 1;
             this.btnMasaEkle.UseVisualStyleBackColor = true;
             this.btnMasaEkle.Click += new System.EventHandler(this.btnMasaEkle_Click);
@@ -74,35 +76,38 @@ namespace CafeAutomation.App.Forms
             // 
             this.btnMasaSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMasaSil.BackgroundImage")));
             this.btnMasaSil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMasaSil.Location = new System.Drawing.Point(184, 307);
+            this.btnMasaSil.Location = new System.Drawing.Point(374, 476);
+            this.btnMasaSil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMasaSil.Name = "btnMasaSil";
-            this.btnMasaSil.Size = new System.Drawing.Size(112, 103);
+            this.btnMasaSil.Size = new System.Drawing.Size(128, 137);
             this.btnMasaSil.TabIndex = 4;
             this.btnMasaSil.UseVisualStyleBackColor = true;
             this.btnMasaSil.Click += new System.EventHandler(this.btnMasaSil_Click);
             // 
             // txtMasaNumarasi
             // 
-            this.txtMasaNumarasi.Location = new System.Drawing.Point(184, 68);
+            this.txtMasaNumarasi.Location = new System.Drawing.Point(374, 158);
+            this.txtMasaNumarasi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMasaNumarasi.Name = "txtMasaNumarasi";
-            this.txtMasaNumarasi.Size = new System.Drawing.Size(112, 23);
+            this.txtMasaNumarasi.Size = new System.Drawing.Size(127, 27);
             this.txtMasaNumarasi.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(52, 71);
+            this.label1.Location = new System.Drawing.Point(223, 162);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 15);
+            this.label1.Size = new System.Drawing.Size(129, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "MASA NUMARASI";
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(48, 130);
+            this.btn1.Location = new System.Drawing.Point(219, 240);
+            this.btn1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(64, 32);
+            this.btn1.Size = new System.Drawing.Size(73, 43);
             this.btn1.TabIndex = 6;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
@@ -110,9 +115,10 @@ namespace CafeAutomation.App.Forms
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(141, 130);
+            this.btn2.Location = new System.Drawing.Point(325, 240);
+            this.btn2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(64, 32);
+            this.btn2.Size = new System.Drawing.Size(73, 43);
             this.btn2.TabIndex = 7;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
@@ -120,9 +126,10 @@ namespace CafeAutomation.App.Forms
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(232, 130);
+            this.btn3.Location = new System.Drawing.Point(429, 240);
+            this.btn3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(64, 32);
+            this.btn3.Size = new System.Drawing.Size(73, 43);
             this.btn3.TabIndex = 8;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
@@ -130,9 +137,10 @@ namespace CafeAutomation.App.Forms
             // 
             // btnC
             // 
-            this.btnC.Location = new System.Drawing.Point(232, 248);
+            this.btnC.Location = new System.Drawing.Point(429, 398);
+            this.btnC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(64, 32);
+            this.btnC.Size = new System.Drawing.Size(73, 43);
             this.btnC.TabIndex = 9;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = true;
@@ -140,9 +148,10 @@ namespace CafeAutomation.App.Forms
             // 
             // btn0
             // 
-            this.btn0.Location = new System.Drawing.Point(141, 248);
+            this.btn0.Location = new System.Drawing.Point(325, 398);
+            this.btn0.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(64, 32);
+            this.btn0.Size = new System.Drawing.Size(73, 43);
             this.btn0.TabIndex = 10;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
@@ -150,9 +159,10 @@ namespace CafeAutomation.App.Forms
             // 
             // btn9
             // 
-            this.btn9.Location = new System.Drawing.Point(232, 208);
+            this.btn9.Location = new System.Drawing.Point(429, 344);
+            this.btn9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(64, 32);
+            this.btn9.Size = new System.Drawing.Size(73, 43);
             this.btn9.TabIndex = 11;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
@@ -160,9 +170,10 @@ namespace CafeAutomation.App.Forms
             // 
             // btn8
             // 
-            this.btn8.Location = new System.Drawing.Point(141, 208);
+            this.btn8.Location = new System.Drawing.Point(325, 344);
+            this.btn8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(64, 32);
+            this.btn8.Size = new System.Drawing.Size(73, 43);
             this.btn8.TabIndex = 12;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
@@ -170,9 +181,10 @@ namespace CafeAutomation.App.Forms
             // 
             // btn7
             // 
-            this.btn7.Location = new System.Drawing.Point(48, 208);
+            this.btn7.Location = new System.Drawing.Point(219, 344);
+            this.btn7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(64, 32);
+            this.btn7.Size = new System.Drawing.Size(73, 43);
             this.btn7.TabIndex = 13;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
@@ -180,9 +192,10 @@ namespace CafeAutomation.App.Forms
             // 
             // btn6
             // 
-            this.btn6.Location = new System.Drawing.Point(232, 168);
+            this.btn6.Location = new System.Drawing.Point(429, 291);
+            this.btn6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(64, 32);
+            this.btn6.Size = new System.Drawing.Size(73, 43);
             this.btn6.TabIndex = 14;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
@@ -190,9 +203,10 @@ namespace CafeAutomation.App.Forms
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(141, 168);
+            this.btn5.Location = new System.Drawing.Point(325, 291);
+            this.btn5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(64, 32);
+            this.btn5.Size = new System.Drawing.Size(73, 43);
             this.btn5.TabIndex = 15;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
@@ -200,9 +214,10 @@ namespace CafeAutomation.App.Forms
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(48, 168);
+            this.btn4.Location = new System.Drawing.Point(219, 291);
+            this.btn4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(64, 32);
+            this.btn4.Size = new System.Drawing.Size(73, 43);
             this.btn4.TabIndex = 16;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
@@ -210,9 +225,10 @@ namespace CafeAutomation.App.Forms
             // 
             // btnTusSil
             // 
-            this.btnTusSil.Location = new System.Drawing.Point(48, 248);
+            this.btnTusSil.Location = new System.Drawing.Point(219, 398);
+            this.btnTusSil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTusSil.Name = "btnTusSil";
-            this.btnTusSil.Size = new System.Drawing.Size(64, 32);
+            this.btnTusSil.Size = new System.Drawing.Size(73, 43);
             this.btnTusSil.TabIndex = 17;
             this.btnTusSil.Text = "<--";
             this.btnTusSil.UseVisualStyleBackColor = true;
@@ -220,9 +236,9 @@ namespace CafeAutomation.App.Forms
             // 
             // FrmBahceMasalar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1779, 999);
             this.Controls.Add(this.btnTusSil);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn5);
@@ -241,6 +257,7 @@ namespace CafeAutomation.App.Forms
             this.Controls.Add(this.txtMasaNumarasi);
             this.Controls.Add(this.flpBahceMasalar);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmBahceMasalar";
