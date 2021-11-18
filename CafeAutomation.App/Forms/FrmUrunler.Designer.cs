@@ -40,17 +40,16 @@ namespace CafeAutomation.App.Forms
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnGeriDon = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbKategoriler = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstUrunler
             // 
             this.lstUrunler.FormattingEnabled = true;
             this.lstUrunler.ItemHeight = 15;
-            this.lstUrunler.Location = new System.Drawing.Point(6, 22);
+            this.lstUrunler.Location = new System.Drawing.Point(23, 18);
             this.lstUrunler.Name = "lstUrunler";
             this.lstUrunler.Size = new System.Drawing.Size(606, 304);
             this.lstUrunler.TabIndex = 0;
@@ -58,14 +57,14 @@ namespace CafeAutomation.App.Forms
             // 
             // txtUrunAd
             // 
-            this.txtUrunAd.Location = new System.Drawing.Point(258, 357);
+            this.txtUrunAd.Location = new System.Drawing.Point(255, 354);
             this.txtUrunAd.Name = "txtUrunAd";
             this.txtUrunAd.Size = new System.Drawing.Size(199, 23);
             this.txtUrunAd.TabIndex = 1;
             // 
             // txtFiyat
             // 
-            this.txtFiyat.Location = new System.Drawing.Point(258, 386);
+            this.txtFiyat.Location = new System.Drawing.Point(255, 383);
             this.txtFiyat.Name = "txtFiyat";
             this.txtFiyat.Size = new System.Drawing.Size(199, 23);
             this.txtFiyat.TabIndex = 2;
@@ -74,7 +73,7 @@ namespace CafeAutomation.App.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(166, 357);
+            this.label1.Location = new System.Drawing.Point(163, 354);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 15);
             this.label1.TabIndex = 4;
@@ -84,7 +83,7 @@ namespace CafeAutomation.App.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(166, 386);
+            this.label2.Location = new System.Drawing.Point(163, 383);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 15);
             this.label2.TabIndex = 5;
@@ -94,7 +93,7 @@ namespace CafeAutomation.App.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(166, 415);
+            this.label3.Location = new System.Drawing.Point(163, 412);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 15);
             this.label3.TabIndex = 6;
@@ -102,7 +101,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(166, 456);
+            this.btnEkle.Location = new System.Drawing.Point(163, 453);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(93, 39);
             this.btnEkle.TabIndex = 7;
@@ -112,7 +111,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.Location = new System.Drawing.Point(265, 456);
+            this.btnGuncelle.Location = new System.Drawing.Point(262, 453);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(93, 39);
             this.btnGuncelle.TabIndex = 8;
@@ -122,7 +121,8 @@ namespace CafeAutomation.App.Forms
             // 
             // btnGeriDon
             // 
-            this.btnGeriDon.Location = new System.Drawing.Point(1173, 680);
+            this.btnGeriDon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGeriDon.Location = new System.Drawing.Point(1196, 660);
             this.btnGeriDon.Name = "btnGeriDon";
             this.btnGeriDon.Size = new System.Drawing.Size(93, 39);
             this.btnGeriDon.TabIndex = 10;
@@ -132,7 +132,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(364, 456);
+            this.btnSil.Location = new System.Drawing.Point(361, 453);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(93, 39);
             this.btnSil.TabIndex = 14;
@@ -140,38 +140,30 @@ namespace CafeAutomation.App.Forms
             this.btnSil.UseVisualStyleBackColor = true;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.cmbKategoriler);
-            this.groupBox1.Controls.Add(this.btnSil);
-            this.groupBox1.Controls.Add(this.lstUrunler);
-            this.groupBox1.Controls.Add(this.txtUrunAd);
-            this.groupBox1.Controls.Add(this.txtFiyat);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnGuncelle);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.btnEkle);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(636, 66);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(630, 596);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            // 
             // cmbKategoriler
             // 
             this.cmbKategoriler.FormattingEnabled = true;
-            this.cmbKategoriler.Location = new System.Drawing.Point(258, 415);
+            this.cmbKategoriler.Location = new System.Drawing.Point(255, 412);
             this.cmbKategoriler.Name = "cmbKategoriler";
             this.cmbKategoriler.Size = new System.Drawing.Size(199, 23);
             this.cmbKategoriler.TabIndex = 15;
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(288, 66);
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.cmbKategoriler);
+            this.panel1.Controls.Add(this.lstUrunler);
+            this.panel1.Controls.Add(this.btnSil);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.btnEkle);
+            this.panel1.Controls.Add(this.txtUrunAd);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtFiyat);
+            this.panel1.Controls.Add(this.btnGuncelle);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(636, 66);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(315, 479);
+            this.panel1.Size = new System.Drawing.Size(653, 596);
             this.panel1.TabIndex = 16;
             // 
             // FrmUrunler
@@ -182,7 +174,6 @@ namespace CafeAutomation.App.Forms
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnGeriDon);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -190,8 +181,8 @@ namespace CafeAutomation.App.Forms
             this.Text = "FrmUrunler";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmUrunler_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -208,7 +199,6 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnGeriDon;
         private System.Windows.Forms.Button btnSil;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cmbKategoriler;
         private System.Windows.Forms.Panel panel1;
     }
