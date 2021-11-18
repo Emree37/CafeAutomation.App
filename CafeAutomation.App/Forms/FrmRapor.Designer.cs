@@ -134,11 +134,13 @@ namespace CafeAutomation.App.Forms
             // 
             // btnGeriDon
             // 
+            this.btnGeriDon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGeriDon.BackgroundImage")));
+            this.btnGeriDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGeriDon.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btnGeriDon.Location = new System.Drawing.Point(1755, 884);
             this.btnGeriDon.Name = "btnGeriDon";
             this.btnGeriDon.Size = new System.Drawing.Size(97, 66);
             this.btnGeriDon.TabIndex = 5;
-            this.btnGeriDon.Text = "GERİ DÖN";
             this.btnGeriDon.UseVisualStyleBackColor = true;
             this.btnGeriDon.Click += new System.EventHandler(this.btnGeriDon_Click);
             // 

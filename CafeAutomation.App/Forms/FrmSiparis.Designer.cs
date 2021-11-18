@@ -69,10 +69,11 @@ namespace CafeAutomation.App.Forms
             // 
             this.lblMasaIsmi.AutoSize = true;
             this.lblMasaIsmi.BackColor = System.Drawing.Color.Transparent;
+            this.lblMasaIsmi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblMasaIsmi.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblMasaIsmi.Location = new System.Drawing.Point(242, 531);
             this.lblMasaIsmi.Name = "lblMasaIsmi";
-            this.lblMasaIsmi.Size = new System.Drawing.Size(0, 15);
+            this.lblMasaIsmi.Size = new System.Drawing.Size(0, 21);
             this.lblMasaIsmi.TabIndex = 0;
             // 
             // dgvListe
@@ -94,10 +95,11 @@ namespace CafeAutomation.App.Forms
             // 
             this.lblToplamTutar.AutoSize = true;
             this.lblToplamTutar.BackColor = System.Drawing.Color.Transparent;
+            this.lblToplamTutar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblToplamTutar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblToplamTutar.Location = new System.Drawing.Point(710, 531);
             this.lblToplamTutar.Name = "lblToplamTutar";
-            this.lblToplamTutar.Size = new System.Drawing.Size(0, 15);
+            this.lblToplamTutar.Size = new System.Drawing.Size(0, 21);
             this.lblToplamTutar.TabIndex = 2;
             // 
             // label1
@@ -107,9 +109,9 @@ namespace CafeAutomation.App.Forms
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(584, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 15);
+            this.label1.Size = new System.Drawing.Size(39, 15);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Ürün Adı :";
+            this.label1.Text = "Ürün :";
             // 
             // label2
             // 
@@ -127,7 +129,7 @@ namespace CafeAutomation.App.Forms
             this.cmbUrunler.FormattingEnabled = true;
             this.cmbUrunler.Location = new System.Drawing.Point(660, 9);
             this.cmbUrunler.Name = "cmbUrunler";
-            this.cmbUrunler.Size = new System.Drawing.Size(144, 23);
+            this.cmbUrunler.Size = new System.Drawing.Size(374, 23);
             this.cmbUrunler.TabIndex = 6;
             // 
             // txtAdet
@@ -135,14 +137,14 @@ namespace CafeAutomation.App.Forms
             this.txtAdet.Location = new System.Drawing.Point(660, 43);
             this.txtAdet.Name = "txtAdet";
             this.txtAdet.ReadOnly = true;
-            this.txtAdet.Size = new System.Drawing.Size(144, 23);
+            this.txtAdet.Size = new System.Drawing.Size(198, 23);
             this.txtAdet.TabIndex = 7;
             // 
             // btnEkle
             // 
             this.btnEkle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEkle.BackgroundImage")));
             this.btnEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEkle.Location = new System.Drawing.Point(660, 128);
+            this.btnEkle.Location = new System.Drawing.Point(890, 154);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(144, 93);
             this.btnEkle.TabIndex = 8;
@@ -208,10 +210,11 @@ namespace CafeAutomation.App.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(562, 531);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 15);
+            this.label3.Size = new System.Drawing.Size(107, 21);
             this.label3.TabIndex = 14;
             this.label3.Text = "Toplam Tutar :";
             // 
@@ -283,7 +286,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(925, 30);
+            this.btn1.Location = new System.Drawing.Point(658, 85);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(52, 36);
             this.btn1.TabIndex = 15;
@@ -293,7 +296,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(1000, 30);
+            this.btn2.Location = new System.Drawing.Point(733, 85);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(52, 36);
             this.btn2.TabIndex = 16;
@@ -303,7 +306,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(1073, 30);
+            this.btn3.Location = new System.Drawing.Point(806, 85);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(52, 36);
             this.btn3.TabIndex = 17;
@@ -313,7 +316,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(1000, 70);
+            this.btn5.Location = new System.Drawing.Point(733, 125);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(52, 36);
             this.btn5.TabIndex = 18;
@@ -323,7 +326,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(925, 70);
+            this.btn4.Location = new System.Drawing.Point(658, 125);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(52, 36);
             this.btn4.TabIndex = 18;
@@ -333,7 +336,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btn6
             // 
-            this.btn6.Location = new System.Drawing.Point(1073, 70);
+            this.btn6.Location = new System.Drawing.Point(806, 125);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(52, 36);
             this.btn6.TabIndex = 19;
@@ -343,7 +346,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btn7
             // 
-            this.btn7.Location = new System.Drawing.Point(925, 114);
+            this.btn7.Location = new System.Drawing.Point(658, 169);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(52, 36);
             this.btn7.TabIndex = 20;
@@ -353,7 +356,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btn8
             // 
-            this.btn8.Location = new System.Drawing.Point(1000, 114);
+            this.btn8.Location = new System.Drawing.Point(733, 169);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(52, 36);
             this.btn8.TabIndex = 21;
@@ -363,7 +366,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btn9
             // 
-            this.btn9.Location = new System.Drawing.Point(1073, 112);
+            this.btn9.Location = new System.Drawing.Point(806, 167);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(52, 36);
             this.btn9.TabIndex = 22;
@@ -373,7 +376,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btn0
             // 
-            this.btn0.Location = new System.Drawing.Point(1000, 156);
+            this.btn0.Location = new System.Drawing.Point(733, 211);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(52, 36);
             this.btn0.TabIndex = 23;
@@ -383,7 +386,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnC
             // 
-            this.btnC.Location = new System.Drawing.Point(1073, 156);
+            this.btnC.Location = new System.Drawing.Point(806, 211);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(52, 36);
             this.btnC.TabIndex = 24;
@@ -393,7 +396,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnTusSil
             // 
-            this.btnTusSil.Location = new System.Drawing.Point(925, 156);
+            this.btnTusSil.Location = new System.Drawing.Point(658, 211);
             this.btnTusSil.Name = "btnTusSil";
             this.btnTusSil.Size = new System.Drawing.Size(52, 36);
             this.btnTusSil.TabIndex = 25;

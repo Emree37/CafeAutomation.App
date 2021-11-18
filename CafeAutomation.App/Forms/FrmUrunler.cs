@@ -46,6 +46,7 @@ namespace CafeAutomation.App.Forms
             UrunContext.Load();
             ListeyiDoldur();
 
+
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
@@ -59,6 +60,8 @@ namespace CafeAutomation.App.Forms
             UrunContext.Urunler.Add(yeniUrun);
             ListeyiDoldur();
             UrunContext.Save();
+            UrunContext.Load();
+
         }
 
         private Urun seciliUrun;
@@ -82,6 +85,7 @@ namespace CafeAutomation.App.Forms
             UrunContext.Save();
         }
 
+        private string seciliUrunler;
         private void btnSil_Click(object sender, EventArgs e)
         {
             seciliUrun = lstUrunler.SelectedItem as Urun;

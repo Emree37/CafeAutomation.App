@@ -106,6 +106,7 @@ namespace CafeAutomation.App.Forms
 
         private void btnFastFood_Click(object sender, EventArgs e)
         {
+            cmbUrunler.Text = " ";
             cmbUrunler.Items.Clear();
             foreach (var urun in UrunContext.Urunler)
             {
@@ -118,6 +119,7 @@ namespace CafeAutomation.App.Forms
 
         private void btnCorbalar_Click(object sender, EventArgs e)
         {
+            cmbUrunler.Text = " ";
             cmbUrunler.SelectedItem = null;
             cmbUrunler.SelectedText = "--Seçiniz--";
             cmbUrunler.Items.Clear();
@@ -299,6 +301,7 @@ namespace CafeAutomation.App.Forms
 
         private void btnYemekler_Click(object sender, EventArgs e)
         {
+            cmbUrunler.Text = " ";
             cmbUrunler.Items.Clear();
             foreach (var urun in UrunContext.Urunler)
             {
@@ -311,6 +314,7 @@ namespace CafeAutomation.App.Forms
 
         private void btnTatlilar_Click(object sender, EventArgs e)
         {
+            cmbUrunler.Text = " ";
             cmbUrunler.Items.Clear();
             foreach (var urun in UrunContext.Urunler)
             {
@@ -323,6 +327,7 @@ namespace CafeAutomation.App.Forms
 
         private void btnSogukIcecekler_Click(object sender, EventArgs e)
         {
+            cmbUrunler.Text = " ";
             cmbUrunler.Items.Clear();
             foreach (var urun in UrunContext.Urunler)
             {
@@ -335,6 +340,7 @@ namespace CafeAutomation.App.Forms
 
         private void btnSicakIcecekler_Click(object sender, EventArgs e)
         {
+            cmbUrunler.Text = " ";
             cmbUrunler.Items.Clear();
             foreach (var urun in UrunContext.Urunler)
             {
