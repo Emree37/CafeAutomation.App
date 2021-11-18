@@ -53,9 +53,9 @@ namespace CafeAutomation.App.Forms
             this.flpZeminMasalar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flpZeminMasalar.BackgroundImage")));
             this.flpZeminMasalar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flpZeminMasalar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flpZeminMasalar.Location = new System.Drawing.Point(324, 0);
+            this.flpZeminMasalar.Location = new System.Drawing.Point(370, 0);
             this.flpZeminMasalar.Name = "flpZeminMasalar";
-            this.flpZeminMasalar.Size = new System.Drawing.Size(1600, 1060);
+            this.flpZeminMasalar.Size = new System.Drawing.Size(1000, 749);
             this.flpZeminMasalar.TabIndex = 5;
             // 
             // txtMasaNumarasi
@@ -90,7 +90,7 @@ namespace CafeAutomation.App.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1924, 1060);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btnZeminMasaEkle);
             this.Controls.Add(this.btnZeminMasaSil);
             this.Controls.Add(this.txtMasaNumarasi);

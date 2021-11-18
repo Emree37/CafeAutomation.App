@@ -79,16 +79,16 @@ namespace CafeAutomation.App.Forms
             this.flpTerasMasalar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flpTerasMasalar.BackgroundImage")));
             this.flpTerasMasalar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flpTerasMasalar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flpTerasMasalar.Location = new System.Drawing.Point(324, 0);
+            this.flpTerasMasalar.Location = new System.Drawing.Point(370, 0);
             this.flpTerasMasalar.Name = "flpTerasMasalar";
-            this.flpTerasMasalar.Size = new System.Drawing.Size(1600, 1061);
+            this.flpTerasMasalar.Size = new System.Drawing.Size(1000, 749);
             this.flpTerasMasalar.TabIndex = 11;
             // 
             // FrmTerasMasalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1061);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.flpTerasMasalar);
             this.Controls.Add(this.btnTerasMasaSil);
             this.Controls.Add(this.btnTerasMasaEkle);

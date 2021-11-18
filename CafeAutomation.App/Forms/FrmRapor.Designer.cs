@@ -68,7 +68,7 @@ namespace CafeAutomation.App.Forms
             this.dgvSiparisRapor.ReadOnly = true;
             this.dgvSiparisRapor.RowTemplate.Height = 25;
             this.dgvSiparisRapor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSiparisRapor.Size = new System.Drawing.Size(650, 400);
+            this.dgvSiparisRapor.Size = new System.Drawing.Size(650, 270);
             this.dgvSiparisRapor.TabIndex = 0;
             this.dgvSiparisRapor.SelectionChanged += new System.EventHandler(this.dgvSiparisRapor_SelectionChanged);
             // 
@@ -89,13 +89,13 @@ namespace CafeAutomation.App.Forms
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSiparisDetayRapor.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvSiparisDetayRapor.Location = new System.Drawing.Point(12, 550);
+            this.dgvSiparisDetayRapor.Location = new System.Drawing.Point(12, 350);
             this.dgvSiparisDetayRapor.MultiSelect = false;
             this.dgvSiparisDetayRapor.Name = "dgvSiparisDetayRapor";
             this.dgvSiparisDetayRapor.ReadOnly = true;
             this.dgvSiparisDetayRapor.RowTemplate.Height = 25;
             this.dgvSiparisDetayRapor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSiparisDetayRapor.Size = new System.Drawing.Size(650, 400);
+            this.dgvSiparisDetayRapor.Size = new System.Drawing.Size(650, 300);
             this.dgvSiparisDetayRapor.TabIndex = 1;
             // 
             // dateTimePicker1
@@ -147,7 +147,7 @@ namespace CafeAutomation.App.Forms
             this.BackColor = System.Drawing.Color.Maroon;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1864, 978);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btnGeriDon);
             this.Controls.Add(this.lblGunToplamTutar);
             this.Controls.Add(this.lblSecilenGunIsmi);

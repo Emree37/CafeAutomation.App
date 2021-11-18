@@ -42,9 +42,9 @@ namespace CafeAutomation.App.Forms
             this.flpBahceMasalar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flpBahceMasalar.BackgroundImage")));
             this.flpBahceMasalar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flpBahceMasalar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flpBahceMasalar.Location = new System.Drawing.Point(324, 0);
+            this.flpBahceMasalar.Location = new System.Drawing.Point(370, 0);
             this.flpBahceMasalar.Name = "flpBahceMasalar";
-            this.flpBahceMasalar.Size = new System.Drawing.Size(1600, 889);
+            this.flpBahceMasalar.Size = new System.Drawing.Size(1000, 749);
             this.flpBahceMasalar.TabIndex = 0;
             // 
             // btnMasaEkle
@@ -88,7 +88,7 @@ namespace CafeAutomation.App.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 889);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btnMasaSil);
             this.Controls.Add(this.btnMasaEkle);
             this.Controls.Add(this.label1);
