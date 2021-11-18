@@ -29,10 +29,10 @@ namespace CafeAutomation.App.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSiparis));
             this.lblMasaIsmi = new System.Windows.Forms.Label();
             this.dgvListe = new System.Windows.Forms.DataGridView();
             this.lblToplamTutar = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSogukIcecekler = new System.Windows.Forms.Button();
             this.btnSicakIcecekler = new System.Windows.Forms.Button();
             this.btnTatlilar = new System.Windows.Forms.Button();
@@ -50,14 +50,15 @@ namespace CafeAutomation.App.Forms
             this.btnAdisyon = new System.Windows.Forms.Button();
             this.btnMasayiKapat = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMasaIsmi
             // 
             this.lblMasaIsmi.AutoSize = true;
-            this.lblMasaIsmi.Location = new System.Drawing.Point(287, 282);
+            this.lblMasaIsmi.Location = new System.Drawing.Point(170, 524);
             this.lblMasaIsmi.Name = "lblMasaIsmi";
             this.lblMasaIsmi.Size = new System.Drawing.Size(0, 15);
             this.lblMasaIsmi.TabIndex = 0;
@@ -67,7 +68,7 @@ namespace CafeAutomation.App.Forms
             this.dgvListe.AllowUserToAddRows = false;
             this.dgvListe.AllowUserToDeleteRows = false;
             this.dgvListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListe.Location = new System.Drawing.Point(287, 13);
+            this.dgvListe.Location = new System.Drawing.Point(170, 268);
             this.dgvListe.MultiSelect = false;
             this.dgvListe.Name = "dgvListe";
             this.dgvListe.ReadOnly = true;
@@ -79,29 +80,16 @@ namespace CafeAutomation.App.Forms
             // lblToplamTutar
             // 
             this.lblToplamTutar.AutoSize = true;
-            this.lblToplamTutar.Location = new System.Drawing.Point(734, 282);
+            this.lblToplamTutar.BackColor = System.Drawing.Color.Transparent;
+            this.lblToplamTutar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblToplamTutar.Location = new System.Drawing.Point(610, 524);
             this.lblToplamTutar.Name = "lblToplamTutar";
             this.lblToplamTutar.Size = new System.Drawing.Size(0, 15);
             this.lblToplamTutar.TabIndex = 2;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnSogukIcecekler);
-            this.groupBox1.Controls.Add(this.btnSicakIcecekler);
-            this.groupBox1.Controls.Add(this.btnTatlilar);
-            this.groupBox1.Controls.Add(this.btnYemekler);
-            this.groupBox1.Controls.Add(this.btnFastFood);
-            this.groupBox1.Controls.Add(this.btnCorbalar);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 242);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Kategoriler";
-            // 
             // btnSogukIcecekler
             // 
-            this.btnSogukIcecekler.Location = new System.Drawing.Point(108, 165);
+            this.btnSogukIcecekler.Location = new System.Drawing.Point(143, 164);
             this.btnSogukIcecekler.Name = "btnSogukIcecekler";
             this.btnSogukIcecekler.Size = new System.Drawing.Size(86, 45);
             this.btnSogukIcecekler.TabIndex = 5;
@@ -111,7 +99,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnSicakIcecekler
             // 
-            this.btnSicakIcecekler.Location = new System.Drawing.Point(7, 166);
+            this.btnSicakIcecekler.Location = new System.Drawing.Point(36, 164);
             this.btnSicakIcecekler.Name = "btnSicakIcecekler";
             this.btnSicakIcecekler.Size = new System.Drawing.Size(84, 45);
             this.btnSicakIcecekler.TabIndex = 4;
@@ -121,7 +109,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnTatlilar
             // 
-            this.btnTatlilar.Location = new System.Drawing.Point(108, 98);
+            this.btnTatlilar.Location = new System.Drawing.Point(143, 94);
             this.btnTatlilar.Name = "btnTatlilar";
             this.btnTatlilar.Size = new System.Drawing.Size(86, 45);
             this.btnTatlilar.TabIndex = 3;
@@ -131,7 +119,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnYemekler
             // 
-            this.btnYemekler.Location = new System.Drawing.Point(7, 99);
+            this.btnYemekler.Location = new System.Drawing.Point(36, 94);
             this.btnYemekler.Name = "btnYemekler";
             this.btnYemekler.Size = new System.Drawing.Size(84, 45);
             this.btnYemekler.TabIndex = 2;
@@ -141,7 +129,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnFastFood
             // 
-            this.btnFastFood.Location = new System.Drawing.Point(108, 22);
+            this.btnFastFood.Location = new System.Drawing.Point(143, 18);
             this.btnFastFood.Name = "btnFastFood";
             this.btnFastFood.Size = new System.Drawing.Size(86, 45);
             this.btnFastFood.TabIndex = 1;
@@ -151,7 +139,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnCorbalar
             // 
-            this.btnCorbalar.Location = new System.Drawing.Point(7, 23);
+            this.btnCorbalar.Location = new System.Drawing.Point(36, 18);
             this.btnCorbalar.Name = "btnCorbalar";
             this.btnCorbalar.Size = new System.Drawing.Size(84, 45);
             this.btnCorbalar.TabIndex = 0;
@@ -162,7 +150,9 @@ namespace CafeAutomation.App.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 274);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(444, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 15);
             this.label1.TabIndex = 4;
@@ -171,7 +161,9 @@ namespace CafeAutomation.App.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 311);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(466, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 15);
             this.label2.TabIndex = 5;
@@ -180,21 +172,21 @@ namespace CafeAutomation.App.Forms
             // cmbUrunler
             // 
             this.cmbUrunler.FormattingEnabled = true;
-            this.cmbUrunler.Location = new System.Drawing.Point(96, 274);
+            this.cmbUrunler.Location = new System.Drawing.Point(527, 12);
             this.cmbUrunler.Name = "cmbUrunler";
             this.cmbUrunler.Size = new System.Drawing.Size(121, 23);
             this.cmbUrunler.TabIndex = 6;
             // 
             // txtAdet
             // 
-            this.txtAdet.Location = new System.Drawing.Point(96, 303);
+            this.txtAdet.Location = new System.Drawing.Point(527, 41);
             this.txtAdet.Name = "txtAdet";
             this.txtAdet.Size = new System.Drawing.Size(121, 23);
             this.txtAdet.TabIndex = 7;
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(96, 332);
+            this.btnEkle.Location = new System.Drawing.Point(527, 70);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(121, 45);
             this.btnEkle.TabIndex = 8;
@@ -204,7 +196,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnIptal
             // 
-            this.btnIptal.Location = new System.Drawing.Point(287, 332);
+            this.btnIptal.Location = new System.Drawing.Point(169, 561);
             this.btnIptal.Name = "btnIptal";
             this.btnIptal.Size = new System.Drawing.Size(121, 45);
             this.btnIptal.TabIndex = 9;
@@ -214,7 +206,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(414, 332);
+            this.btnSil.Location = new System.Drawing.Point(296, 561);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(121, 45);
             this.btnSil.TabIndex = 10;
@@ -224,7 +216,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnGeriDon
             // 
-            this.btnGeriDon.Location = new System.Drawing.Point(541, 332);
+            this.btnGeriDon.Location = new System.Drawing.Point(423, 561);
             this.btnGeriDon.Name = "btnGeriDon";
             this.btnGeriDon.Size = new System.Drawing.Size(121, 45);
             this.btnGeriDon.TabIndex = 11;
@@ -234,7 +226,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnAdisyon
             // 
-            this.btnAdisyon.Location = new System.Drawing.Point(668, 332);
+            this.btnAdisyon.Location = new System.Drawing.Point(550, 561);
             this.btnAdisyon.Name = "btnAdisyon";
             this.btnAdisyon.Size = new System.Drawing.Size(121, 45);
             this.btnAdisyon.TabIndex = 12;
@@ -244,7 +236,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnMasayiKapat
             // 
-            this.btnMasayiKapat.Location = new System.Drawing.Point(668, 383);
+            this.btnMasayiKapat.Location = new System.Drawing.Point(550, 612);
             this.btnMasayiKapat.Name = "btnMasayiKapat";
             this.btnMasayiKapat.Size = new System.Drawing.Size(121, 45);
             this.btnMasayiKapat.TabIndex = 13;
@@ -255,17 +247,36 @@ namespace CafeAutomation.App.Forms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(612, 282);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(462, 524);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 15);
             this.label3.TabIndex = 14;
             this.label3.Text = "Toplam Tutar :";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.btnSogukIcecekler);
+            this.panel1.Controls.Add(this.btnFastFood);
+            this.panel1.Controls.Add(this.btnSicakIcecekler);
+            this.panel1.Controls.Add(this.btnCorbalar);
+            this.panel1.Controls.Add(this.btnTatlilar);
+            this.panel1.Controls.Add(this.btnYemekler);
+            this.panel1.Location = new System.Drawing.Point(160, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(278, 227);
+            this.panel1.TabIndex = 15;
+            // 
             // FrmSiparis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 590);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1310, 714);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnMasayiKapat);
             this.Controls.Add(this.btnAdisyon);
@@ -277,7 +288,6 @@ namespace CafeAutomation.App.Forms
             this.Controls.Add(this.cmbUrunler);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblToplamTutar);
             this.Controls.Add(this.dgvListe);
             this.Controls.Add(this.lblMasaIsmi);
@@ -289,7 +299,7 @@ namespace CafeAutomation.App.Forms
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmSiparis_FormClosed);
             this.Load += new System.EventHandler(this.FrmSiparis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).EndInit();
-            this.groupBox1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,7 +310,6 @@ namespace CafeAutomation.App.Forms
         public System.Windows.Forms.Label lblMasaIsmi;
         private System.Windows.Forms.DataGridView dgvListe;
         private System.Windows.Forms.Label lblToplamTutar;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnFastFood;
         private System.Windows.Forms.Button btnCorbalar;
         private System.Windows.Forms.Label label1;
@@ -318,5 +327,6 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.Button btnSicakIcecekler;
         private System.Windows.Forms.Button btnTatlilar;
         private System.Windows.Forms.Button btnYemekler;
+        private System.Windows.Forms.Panel panel1;
     }
 }
