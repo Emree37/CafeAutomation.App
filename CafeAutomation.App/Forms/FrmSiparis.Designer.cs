@@ -50,6 +50,18 @@ namespace CafeAutomation.App.Forms
             this.btnSicakIcecekler = new System.Windows.Forms.Button();
             this.btnFastFood = new System.Windows.Forms.Button();
             this.btnSogukIcecekler = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.btn6 = new System.Windows.Forms.Button();
+            this.btn7 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
+            this.btn9 = new System.Windows.Forms.Button();
+            this.btn0 = new System.Windows.Forms.Button();
+            this.btnC = new System.Windows.Forms.Button();
+            this.btnTusSil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListe)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +105,7 @@ namespace CafeAutomation.App.Forms
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(650, 30);
+            this.label1.Location = new System.Drawing.Point(584, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 15);
             this.label1.TabIndex = 4;
@@ -104,7 +116,7 @@ namespace CafeAutomation.App.Forms
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(650, 63);
+            this.label2.Location = new System.Drawing.Point(584, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 15);
             this.label2.TabIndex = 5;
@@ -113,15 +125,16 @@ namespace CafeAutomation.App.Forms
             // cmbUrunler
             // 
             this.cmbUrunler.FormattingEnabled = true;
-            this.cmbUrunler.Location = new System.Drawing.Point(726, 22);
+            this.cmbUrunler.Location = new System.Drawing.Point(660, 9);
             this.cmbUrunler.Name = "cmbUrunler";
             this.cmbUrunler.Size = new System.Drawing.Size(144, 23);
             this.cmbUrunler.TabIndex = 6;
             // 
             // txtAdet
             // 
-            this.txtAdet.Location = new System.Drawing.Point(726, 55);
+            this.txtAdet.Location = new System.Drawing.Point(660, 43);
             this.txtAdet.Name = "txtAdet";
+            this.txtAdet.ReadOnly = true;
             this.txtAdet.Size = new System.Drawing.Size(144, 23);
             this.txtAdet.TabIndex = 7;
             // 
@@ -129,7 +142,7 @@ namespace CafeAutomation.App.Forms
             // 
             this.btnEkle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEkle.BackgroundImage")));
             this.btnEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEkle.Location = new System.Drawing.Point(726, 119);
+            this.btnEkle.Location = new System.Drawing.Point(660, 128);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(144, 93);
             this.btnEkle.TabIndex = 8;
@@ -268,6 +281,126 @@ namespace CafeAutomation.App.Forms
             this.btnSogukIcecekler.UseVisualStyleBackColor = true;
             this.btnSogukIcecekler.Click += new System.EventHandler(this.btnSogukIcecekler_Click);
             // 
+            // btn1
+            // 
+            this.btn1.Location = new System.Drawing.Point(925, 30);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(52, 36);
+            this.btn1.TabIndex = 15;
+            this.btn1.Text = "1";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            // 
+            // btn2
+            // 
+            this.btn2.Location = new System.Drawing.Point(1000, 30);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(52, 36);
+            this.btn2.TabIndex = 16;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            // 
+            // btn3
+            // 
+            this.btn3.Location = new System.Drawing.Point(1073, 30);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(52, 36);
+            this.btn3.TabIndex = 17;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            // 
+            // btn5
+            // 
+            this.btn5.Location = new System.Drawing.Point(1000, 70);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(52, 36);
+            this.btn5.TabIndex = 18;
+            this.btn5.Text = "5";
+            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            // 
+            // btn4
+            // 
+            this.btn4.Location = new System.Drawing.Point(925, 70);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(52, 36);
+            this.btn4.TabIndex = 18;
+            this.btn4.Text = "4";
+            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            // 
+            // btn6
+            // 
+            this.btn6.Location = new System.Drawing.Point(1073, 70);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(52, 36);
+            this.btn6.TabIndex = 19;
+            this.btn6.Text = "6";
+            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            // 
+            // btn7
+            // 
+            this.btn7.Location = new System.Drawing.Point(925, 114);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(52, 36);
+            this.btn7.TabIndex = 20;
+            this.btn7.Text = "7";
+            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            // 
+            // btn8
+            // 
+            this.btn8.Location = new System.Drawing.Point(1000, 114);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(52, 36);
+            this.btn8.TabIndex = 21;
+            this.btn8.Text = "8";
+            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            // 
+            // btn9
+            // 
+            this.btn9.Location = new System.Drawing.Point(1073, 112);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(52, 36);
+            this.btn9.TabIndex = 22;
+            this.btn9.Text = "9";
+            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            // 
+            // btn0
+            // 
+            this.btn0.Location = new System.Drawing.Point(1000, 156);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(52, 36);
+            this.btn0.TabIndex = 23;
+            this.btn0.Text = "0";
+            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
+            // 
+            // btnC
+            // 
+            this.btnC.Location = new System.Drawing.Point(1073, 156);
+            this.btnC.Name = "btnC";
+            this.btnC.Size = new System.Drawing.Size(52, 36);
+            this.btnC.TabIndex = 24;
+            this.btnC.Text = "C";
+            this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
+            // 
+            // btnTusSil
+            // 
+            this.btnTusSil.Location = new System.Drawing.Point(925, 156);
+            this.btnTusSil.Name = "btnTusSil";
+            this.btnTusSil.Size = new System.Drawing.Size(52, 36);
+            this.btnTusSil.TabIndex = 25;
+            this.btnTusSil.Text = "<--";
+            this.btnTusSil.UseVisualStyleBackColor = true;
+            this.btnTusSil.Click += new System.EventHandler(this.btnTusSil_Click);
+            // 
             // FrmSiparis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -275,6 +408,18 @@ namespace CafeAutomation.App.Forms
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.btnTusSil);
+            this.Controls.Add(this.btnC);
+            this.Controls.Add(this.btn0);
+            this.Controls.Add(this.btn9);
+            this.Controls.Add(this.btn8);
+            this.Controls.Add(this.btn7);
+            this.Controls.Add(this.btn6);
+            this.Controls.Add(this.btn4);
+            this.Controls.Add(this.btn5);
+            this.Controls.Add(this.btn3);
+            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.btn1);
             this.Controls.Add(this.btnSogukIcecekler);
             this.Controls.Add(this.btnSicakIcecekler);
             this.Controls.Add(this.btnFastFood);
@@ -330,5 +475,17 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.Button btnSicakIcecekler;
         private System.Windows.Forms.Button btnFastFood;
         private System.Windows.Forms.Button btnSogukIcecekler;
+        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btn5;
+        private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Button btn6;
+        private System.Windows.Forms.Button btn7;
+        private System.Windows.Forms.Button btn8;
+        private System.Windows.Forms.Button btn9;
+        private System.Windows.Forms.Button btn0;
+        private System.Windows.Forms.Button btnC;
+        private System.Windows.Forms.Button btnTusSil;
     }
 }
