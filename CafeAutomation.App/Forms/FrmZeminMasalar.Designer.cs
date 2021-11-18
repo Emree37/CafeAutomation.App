@@ -111,6 +111,7 @@ namespace CafeAutomation.App.Forms
             this.btnZemin1.TabIndex = 10;
             this.btnZemin1.Text = "1";
             this.btnZemin1.UseVisualStyleBackColor = true;
+            this.btnZemin1.Click += new System.EventHandler(this.btnZemin1_Click);
             // 
             // btnZemin2
             // 
@@ -120,6 +121,7 @@ namespace CafeAutomation.App.Forms
             this.btnZemin2.TabIndex = 11;
             this.btnZemin2.Text = "2";
             this.btnZemin2.UseVisualStyleBackColor = true;
+            this.btnZemin2.Click += new System.EventHandler(this.btnZemin2_Click);
             // 
             // btnZemin3
             // 
@@ -129,6 +131,7 @@ namespace CafeAutomation.App.Forms
             this.btnZemin3.TabIndex = 12;
             this.btnZemin3.Text = "3";
             this.btnZemin3.UseVisualStyleBackColor = true;
+            this.btnZemin3.Click += new System.EventHandler(this.btnZemin3_Click);
             // 
             // btnZemin9
             // 
@@ -138,6 +141,7 @@ namespace CafeAutomation.App.Forms
             this.btnZemin9.TabIndex = 15;
             this.btnZemin9.Text = "9";
             this.btnZemin9.UseVisualStyleBackColor = true;
+            this.btnZemin9.Click += new System.EventHandler(this.btnZemin9_Click);
             // 
             // btnZemin8
             // 
@@ -147,6 +151,7 @@ namespace CafeAutomation.App.Forms
             this.btnZemin8.TabIndex = 14;
             this.btnZemin8.Text = "8";
             this.btnZemin8.UseVisualStyleBackColor = true;
+            this.btnZemin8.Click += new System.EventHandler(this.btnZemin8_Click);
             // 
             // btnZemin7
             // 
@@ -156,6 +161,7 @@ namespace CafeAutomation.App.Forms
             this.btnZemin7.TabIndex = 13;
             this.btnZemin7.Text = "7";
             this.btnZemin7.UseVisualStyleBackColor = true;
+            this.btnZemin7.Click += new System.EventHandler(this.btnZemin7_Click);
             // 
             // btnZemin6
             // 
@@ -165,6 +171,7 @@ namespace CafeAutomation.App.Forms
             this.btnZemin6.TabIndex = 21;
             this.btnZemin6.Text = "6";
             this.btnZemin6.UseVisualStyleBackColor = true;
+            this.btnZemin6.Click += new System.EventHandler(this.btnZemin6_Click);
             // 
             // btnZemin5
             // 
@@ -174,6 +181,7 @@ namespace CafeAutomation.App.Forms
             this.btnZemin5.TabIndex = 20;
             this.btnZemin5.Text = "5";
             this.btnZemin5.UseVisualStyleBackColor = true;
+            this.btnZemin5.Click += new System.EventHandler(this.btnZemin5_Click);
             // 
             // btnZemin4
             // 
@@ -183,6 +191,7 @@ namespace CafeAutomation.App.Forms
             this.btnZemin4.TabIndex = 19;
             this.btnZemin4.Text = "4";
             this.btnZemin4.UseVisualStyleBackColor = true;
+            this.btnZemin4.Click += new System.EventHandler(this.btnZemin4_Click);
             // 
             // btnZeminC
             // 
@@ -192,6 +201,7 @@ namespace CafeAutomation.App.Forms
             this.btnZeminC.TabIndex = 24;
             this.btnZeminC.Text = "C";
             this.btnZeminC.UseVisualStyleBackColor = true;
+            this.btnZeminC.Click += new System.EventHandler(this.btnZeminC_Click);
             // 
             // btnZemin0
             // 
@@ -201,6 +211,7 @@ namespace CafeAutomation.App.Forms
             this.btnZemin0.TabIndex = 23;
             this.btnZemin0.Text = "0";
             this.btnZemin0.UseVisualStyleBackColor = true;
+            this.btnZemin0.Click += new System.EventHandler(this.btnZemin0_Click);
             // 
             // btnZeminTusSil
             // 
@@ -210,6 +221,7 @@ namespace CafeAutomation.App.Forms
             this.btnZeminTusSil.TabIndex = 22;
             this.btnZeminTusSil.Text = "<--";
             this.btnZeminTusSil.UseVisualStyleBackColor = true;
+            this.btnZeminTusSil.Click += new System.EventHandler(this.btnZeminTusSil_Click);
             // 
             // FrmZeminMasalar
             // 

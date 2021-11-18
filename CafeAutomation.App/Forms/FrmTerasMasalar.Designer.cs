@@ -110,6 +110,7 @@ namespace CafeAutomation.App.Forms
             this.btnTeras1.TabIndex = 13;
             this.btnTeras1.Text = "1";
             this.btnTeras1.UseVisualStyleBackColor = true;
+            this.btnTeras1.Click += new System.EventHandler(this.btnTeras1_Click);
             // 
             // btnTeras2
             // 
@@ -119,6 +120,7 @@ namespace CafeAutomation.App.Forms
             this.btnTeras2.TabIndex = 14;
             this.btnTeras2.Text = "2";
             this.btnTeras2.UseVisualStyleBackColor = true;
+            this.btnTeras2.Click += new System.EventHandler(this.btnTeras2_Click);
             // 
             // btnTeras3
             // 
@@ -128,6 +130,7 @@ namespace CafeAutomation.App.Forms
             this.btnTeras3.TabIndex = 15;
             this.btnTeras3.Text = "3";
             this.btnTeras3.UseVisualStyleBackColor = true;
+            this.btnTeras3.Click += new System.EventHandler(this.btnTeras3_Click);
             // 
             // btnTeras6
             // 
@@ -137,6 +140,7 @@ namespace CafeAutomation.App.Forms
             this.btnTeras6.TabIndex = 18;
             this.btnTeras6.Text = "6";
             this.btnTeras6.UseVisualStyleBackColor = true;
+            this.btnTeras6.Click += new System.EventHandler(this.btnTeras6_Click);
             // 
             // btnTeras5
             // 
@@ -146,6 +150,7 @@ namespace CafeAutomation.App.Forms
             this.btnTeras5.TabIndex = 17;
             this.btnTeras5.Text = "5";
             this.btnTeras5.UseVisualStyleBackColor = true;
+            this.btnTeras5.Click += new System.EventHandler(this.btnTeras5_Click);
             // 
             // btnTeras4
             // 
@@ -155,6 +160,7 @@ namespace CafeAutomation.App.Forms
             this.btnTeras4.TabIndex = 16;
             this.btnTeras4.Text = "4";
             this.btnTeras4.UseVisualStyleBackColor = true;
+            this.btnTeras4.Click += new System.EventHandler(this.btnTeras4_Click);
             // 
             // btnTeras9
             // 
@@ -164,6 +170,7 @@ namespace CafeAutomation.App.Forms
             this.btnTeras9.TabIndex = 21;
             this.btnTeras9.Text = "9";
             this.btnTeras9.UseVisualStyleBackColor = true;
+            this.btnTeras9.Click += new System.EventHandler(this.btnTeras9_Click);
             // 
             // btnTeras8
             // 
@@ -173,6 +180,7 @@ namespace CafeAutomation.App.Forms
             this.btnTeras8.TabIndex = 20;
             this.btnTeras8.Text = "8";
             this.btnTeras8.UseVisualStyleBackColor = true;
+            this.btnTeras8.Click += new System.EventHandler(this.btnTeras8_Click);
             // 
             // btnTeras7
             // 
@@ -182,6 +190,7 @@ namespace CafeAutomation.App.Forms
             this.btnTeras7.TabIndex = 19;
             this.btnTeras7.Text = "7";
             this.btnTeras7.UseVisualStyleBackColor = true;
+            this.btnTeras7.Click += new System.EventHandler(this.btnTeras7_Click);
             // 
             // btnTerasC
             // 
@@ -191,6 +200,7 @@ namespace CafeAutomation.App.Forms
             this.btnTerasC.TabIndex = 24;
             this.btnTerasC.Text = "C";
             this.btnTerasC.UseVisualStyleBackColor = true;
+            this.btnTerasC.Click += new System.EventHandler(this.btnTerasC_Click);
             // 
             // btnTeras0
             // 
@@ -200,6 +210,7 @@ namespace CafeAutomation.App.Forms
             this.btnTeras0.TabIndex = 23;
             this.btnTeras0.Text = "0";
             this.btnTeras0.UseVisualStyleBackColor = true;
+            this.btnTeras0.Click += new System.EventHandler(this.btnTeras0_Click);
             // 
             // btnTerasTusSil
             // 
@@ -209,6 +220,7 @@ namespace CafeAutomation.App.Forms
             this.btnTerasTusSil.TabIndex = 22;
             this.btnTerasTusSil.Text = "<--";
             this.btnTerasTusSil.UseVisualStyleBackColor = true;
+            this.btnTerasTusSil.Click += new System.EventHandler(this.btnTerasTusSil_Click);
             // 
             // FrmTerasMasalar
             // 
