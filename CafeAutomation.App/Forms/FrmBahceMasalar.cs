@@ -33,7 +33,6 @@ namespace CafeAutomation.App.Forms
                 masaButon.Font = new Font(masaButon.Font.FontFamily, 12);
                 masaButon.Click += new EventHandler(YeniButon_Click);
                 flpBahceMasalar.Controls.Add(masaButon);
-                
             }
         }
 
@@ -125,6 +124,7 @@ namespace CafeAutomation.App.Forms
             BahceMasaContext.Save();
             MasalariGetir();
             MasaKontrol();
+            txtMasaNumarasi.Text = "";
         }
 
         private BahceMasa silinecekBahceMasa;
@@ -135,6 +135,142 @@ namespace CafeAutomation.App.Forms
             BahceMasaContext.Save();
             MasalariGetir();
             MasaKontrol();
+            txtMasaNumarasi.Text = "";
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            if (txtMasaNumarasi.Text == "0" || txtMasaNumarasi.Text == null)
+            {
+                txtMasaNumarasi.Text = "1";
+            }
+            else
+            {
+                txtMasaNumarasi.Text = txtMasaNumarasi.Text + "1";
+            }
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            if (txtMasaNumarasi.Text == "0" || txtMasaNumarasi.Text == null)
+            {
+                txtMasaNumarasi.Text = "2";
+            }
+            else
+            {
+                txtMasaNumarasi.Text = txtMasaNumarasi.Text + "2";
+            }
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            if (txtMasaNumarasi.Text == "0" || txtMasaNumarasi.Text == null)
+            {
+                txtMasaNumarasi.Text = "3";
+            }
+            else
+            {
+                txtMasaNumarasi.Text = txtMasaNumarasi.Text + "3";
+            }
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            if (txtMasaNumarasi.Text == "0" || txtMasaNumarasi.Text == null)
+            {
+                txtMasaNumarasi.Text = "4";
+            }
+            else
+            {
+                txtMasaNumarasi.Text = txtMasaNumarasi.Text + "4";
+            }
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            if (txtMasaNumarasi.Text == "0" || txtMasaNumarasi.Text == null)
+            {
+                txtMasaNumarasi.Text = "5";
+            }
+            else
+            {
+                txtMasaNumarasi.Text = txtMasaNumarasi.Text + "5";
+            }
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            if (txtMasaNumarasi.Text == "0" || txtMasaNumarasi.Text == null)
+            {
+                txtMasaNumarasi.Text = "6";
+            }
+            else
+            {
+                txtMasaNumarasi.Text = txtMasaNumarasi.Text + "6";
+            }
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            if (txtMasaNumarasi.Text == "0" || txtMasaNumarasi.Text == null)
+            {
+                txtMasaNumarasi.Text = "7";
+            }
+            else
+            {
+                txtMasaNumarasi.Text = txtMasaNumarasi.Text + "7";
+            }
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            if (txtMasaNumarasi.Text == "0" || txtMasaNumarasi.Text == null)
+            {
+                txtMasaNumarasi.Text = "8";
+            }
+            else
+            {
+                txtMasaNumarasi.Text = txtMasaNumarasi.Text + "8";
+            }
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            if (txtMasaNumarasi.Text == "0" || txtMasaNumarasi.Text == null)
+            {
+                txtMasaNumarasi.Text = "9";
+            }
+            else
+            {
+                txtMasaNumarasi.Text = txtMasaNumarasi.Text + "9";
+            }
+        }
+
+        private void btnTusSil_Click(object sender, EventArgs e)
+        {
+            string silinecekSayi = txtMasaNumarasi.Text;
+            txtMasaNumarasi.Text = null;
+            for (int i = 0; i < silinecekSayi.Length - 1; i++)
+            {
+                txtMasaNumarasi.Text += silinecekSayi[i].ToString();
+            }
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            if (txtMasaNumarasi.Text == "0" || txtMasaNumarasi.Text == null)
+            {
+                txtMasaNumarasi.Text = "";
+            }
+            else
+            {
+                txtMasaNumarasi.Text = txtMasaNumarasi.Text + "0";
+            }
+        }
+
+        private void btnC_Click(object sender, EventArgs e)
+        {
+            txtMasaNumarasi.Text = null;
         }
     }
 }
