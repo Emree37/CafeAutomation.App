@@ -138,61 +138,67 @@ namespace CafeAutomation.App.Forms
             // 
             // btnEkle
             // 
+            this.btnEkle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEkle.BackgroundImage")));
+            this.btnEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEkle.Location = new System.Drawing.Point(640, 121);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(121, 41);
+            this.btnEkle.Size = new System.Drawing.Size(121, 85);
             this.btnEkle.TabIndex = 3;
-            this.btnEkle.Text = "EKLE";
             this.btnEkle.UseVisualStyleBackColor = true;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnIptal
             // 
+            this.btnIptal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIptal.BackgroundImage")));
+            this.btnIptal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIptal.Location = new System.Drawing.Point(397, 596);
             this.btnIptal.Name = "btnIptal";
-            this.btnIptal.Size = new System.Drawing.Size(84, 41);
+            this.btnIptal.Size = new System.Drawing.Size(84, 64);
             this.btnIptal.TabIndex = 4;
-            this.btnIptal.Text = "İPTAL ET";
             this.btnIptal.UseVisualStyleBackColor = true;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // btnSil
             // 
+            this.btnSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSil.BackgroundImage")));
+            this.btnSil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSil.Location = new System.Drawing.Point(487, 596);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(84, 41);
+            this.btnSil.Size = new System.Drawing.Size(84, 64);
             this.btnSil.TabIndex = 5;
-            this.btnSil.Text = "SİL";
             this.btnSil.UseVisualStyleBackColor = true;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnGeriDon
             // 
+            this.btnGeriDon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGeriDon.BackgroundImage")));
+            this.btnGeriDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGeriDon.Location = new System.Drawing.Point(577, 596);
             this.btnGeriDon.Name = "btnGeriDon";
-            this.btnGeriDon.Size = new System.Drawing.Size(84, 41);
+            this.btnGeriDon.Size = new System.Drawing.Size(84, 64);
             this.btnGeriDon.TabIndex = 6;
-            this.btnGeriDon.Text = "GERİ DÖN";
             this.btnGeriDon.UseVisualStyleBackColor = true;
             this.btnGeriDon.Click += new System.EventHandler(this.btnGeriDon_Click);
             // 
             // btnAdisyon
             // 
+            this.btnAdisyon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdisyon.BackgroundImage")));
+            this.btnAdisyon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdisyon.Location = new System.Drawing.Point(667, 596);
             this.btnAdisyon.Name = "btnAdisyon";
-            this.btnAdisyon.Size = new System.Drawing.Size(84, 41);
+            this.btnAdisyon.Size = new System.Drawing.Size(84, 64);
             this.btnAdisyon.TabIndex = 7;
-            this.btnAdisyon.Text = "ADİSYON";
             this.btnAdisyon.UseVisualStyleBackColor = true;
             this.btnAdisyon.Click += new System.EventHandler(this.btnAdisyon_Click);
             // 
             // btnMasayiKapat
             // 
+            this.btnMasayiKapat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMasayiKapat.BackgroundImage")));
+            this.btnMasayiKapat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMasayiKapat.Location = new System.Drawing.Point(757, 596);
             this.btnMasayiKapat.Name = "btnMasayiKapat";
-            this.btnMasayiKapat.Size = new System.Drawing.Size(84, 41);
+            this.btnMasayiKapat.Size = new System.Drawing.Size(84, 64);
             this.btnMasayiKapat.TabIndex = 8;
-            this.btnMasayiKapat.Text = "MASAYI KAPAT";
             this.btnMasayiKapat.UseVisualStyleBackColor = true;
             this.btnMasayiKapat.Click += new System.EventHandler(this.btnMasayiKapat_Click);
             // 
