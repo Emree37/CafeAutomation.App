@@ -29,6 +29,7 @@ namespace CafeAutomation.App.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBahceMasalar));
             this.flpBahceMasalar = new System.Windows.Forms.FlowLayoutPanel();
             this.btnMasaEkle = new System.Windows.Forms.Button();
             this.btnMasaSil = new System.Windows.Forms.Button();
@@ -38,16 +39,19 @@ namespace CafeAutomation.App.Forms
             // 
             // flpBahceMasalar
             // 
-            this.flpBahceMasalar.Location = new System.Drawing.Point(175, 0);
+            this.flpBahceMasalar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flpBahceMasalar.BackgroundImage")));
+            this.flpBahceMasalar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flpBahceMasalar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flpBahceMasalar.Location = new System.Drawing.Point(324, 0);
             this.flpBahceMasalar.Name = "flpBahceMasalar";
-            this.flpBahceMasalar.Size = new System.Drawing.Size(892, 497);
+            this.flpBahceMasalar.Size = new System.Drawing.Size(1600, 889);
             this.flpBahceMasalar.TabIndex = 0;
             // 
             // btnMasaEkle
             // 
-            this.btnMasaEkle.Location = new System.Drawing.Point(66, 60);
+            this.btnMasaEkle.Location = new System.Drawing.Point(157, 71);
             this.btnMasaEkle.Name = "btnMasaEkle";
-            this.btnMasaEkle.Size = new System.Drawing.Size(103, 23);
+            this.btnMasaEkle.Size = new System.Drawing.Size(103, 68);
             this.btnMasaEkle.TabIndex = 1;
             this.btnMasaEkle.Text = "Masa Ekle";
             this.btnMasaEkle.UseVisualStyleBackColor = true;
@@ -55,9 +59,9 @@ namespace CafeAutomation.App.Forms
             // 
             // btnMasaSil
             // 
-            this.btnMasaSil.Location = new System.Drawing.Point(66, 89);
+            this.btnMasaSil.Location = new System.Drawing.Point(157, 158);
             this.btnMasaSil.Name = "btnMasaSil";
-            this.btnMasaSil.Size = new System.Drawing.Size(103, 23);
+            this.btnMasaSil.Size = new System.Drawing.Size(103, 71);
             this.btnMasaSil.TabIndex = 4;
             this.btnMasaSil.Text = "Masayı Sil";
             this.btnMasaSil.UseVisualStyleBackColor = true;
@@ -65,7 +69,7 @@ namespace CafeAutomation.App.Forms
             // 
             // txtMasaNumarasi
             // 
-            this.txtMasaNumarasi.Location = new System.Drawing.Point(69, 31);
+            this.txtMasaNumarasi.Location = new System.Drawing.Point(160, 31);
             this.txtMasaNumarasi.Name = "txtMasaNumarasi";
             this.txtMasaNumarasi.Size = new System.Drawing.Size(100, 23);
             this.txtMasaNumarasi.TabIndex = 2;
@@ -73,17 +77,18 @@ namespace CafeAutomation.App.Forms
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(13, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 15);
+            this.label1.Size = new System.Drawing.Size(103, 15);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Numara";
+            this.label1.Text = "MASA NUMARASI";
             // 
             // FrmBahceMasalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 497);
+            this.ClientSize = new System.Drawing.Size(1924, 889);
             this.Controls.Add(this.btnMasaSil);
             this.Controls.Add(this.btnMasaEkle);
             this.Controls.Add(this.label1);

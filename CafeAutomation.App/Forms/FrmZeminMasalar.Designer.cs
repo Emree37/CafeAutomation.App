@@ -29,6 +29,7 @@ namespace CafeAutomation.App.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmZeminMasalar));
             this.label1 = new System.Windows.Forms.Label();
             this.flpZeminMasalar = new System.Windows.Forms.FlowLayoutPanel();
             this.txtMasaNumarasi = new System.Windows.Forms.TextBox();
@@ -39,32 +40,36 @@ namespace CafeAutomation.App.Forms
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(13, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 15);
+            this.label1.Size = new System.Drawing.Size(103, 15);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Numara";
+            this.label1.Text = "MASA NUMARASI";
             // 
             // flpZeminMasalar
             // 
+            this.flpZeminMasalar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.flpZeminMasalar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flpZeminMasalar.BackgroundImage")));
+            this.flpZeminMasalar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flpZeminMasalar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flpZeminMasalar.Location = new System.Drawing.Point(190, 0);
+            this.flpZeminMasalar.Location = new System.Drawing.Point(324, 0);
             this.flpZeminMasalar.Name = "flpZeminMasalar";
-            this.flpZeminMasalar.Size = new System.Drawing.Size(610, 450);
+            this.flpZeminMasalar.Size = new System.Drawing.Size(1600, 1060);
             this.flpZeminMasalar.TabIndex = 5;
             // 
             // txtMasaNumarasi
             // 
-            this.txtMasaNumarasi.Location = new System.Drawing.Point(69, 18);
+            this.txtMasaNumarasi.Location = new System.Drawing.Point(168, 18);
             this.txtMasaNumarasi.Name = "txtMasaNumarasi";
             this.txtMasaNumarasi.Size = new System.Drawing.Size(100, 23);
             this.txtMasaNumarasi.TabIndex = 6;
             // 
             // btnZeminMasaSil
             // 
-            this.btnZeminMasaSil.Location = new System.Drawing.Point(69, 88);
+            this.btnZeminMasaSil.Location = new System.Drawing.Point(165, 139);
             this.btnZeminMasaSil.Name = "btnZeminMasaSil";
-            this.btnZeminMasaSil.Size = new System.Drawing.Size(103, 23);
+            this.btnZeminMasaSil.Size = new System.Drawing.Size(103, 67);
             this.btnZeminMasaSil.TabIndex = 7;
             this.btnZeminMasaSil.Text = "Masayı Sil";
             this.btnZeminMasaSil.UseVisualStyleBackColor = true;
@@ -72,9 +77,9 @@ namespace CafeAutomation.App.Forms
             // 
             // btnZeminMasaEkle
             // 
-            this.btnZeminMasaEkle.Location = new System.Drawing.Point(69, 50);
+            this.btnZeminMasaEkle.Location = new System.Drawing.Point(165, 59);
             this.btnZeminMasaEkle.Name = "btnZeminMasaEkle";
-            this.btnZeminMasaEkle.Size = new System.Drawing.Size(103, 23);
+            this.btnZeminMasaEkle.Size = new System.Drawing.Size(103, 63);
             this.btnZeminMasaEkle.TabIndex = 8;
             this.btnZeminMasaEkle.Text = "Masa Ekle";
             this.btnZeminMasaEkle.UseVisualStyleBackColor = true;
@@ -84,7 +89,8 @@ namespace CafeAutomation.App.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1924, 1060);
             this.Controls.Add(this.btnZeminMasaEkle);
             this.Controls.Add(this.btnZeminMasaSil);
             this.Controls.Add(this.txtMasaNumarasi);

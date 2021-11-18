@@ -33,6 +33,10 @@ namespace CafeAutomation.App.Forms
             this.dgvListe = new System.Windows.Forms.DataGridView();
             this.lblToplamTutar = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSogukIcecekler = new System.Windows.Forms.Button();
+            this.btnSicakIcecekler = new System.Windows.Forms.Button();
+            this.btnTatlilar = new System.Windows.Forms.Button();
+            this.btnYemekler = new System.Windows.Forms.Button();
             this.btnFastFood = new System.Windows.Forms.Button();
             this.btnCorbalar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,7 +57,7 @@ namespace CafeAutomation.App.Forms
             // lblMasaIsmi
             // 
             this.lblMasaIsmi.AutoSize = true;
-            this.lblMasaIsmi.Location = new System.Drawing.Point(287, 33);
+            this.lblMasaIsmi.Location = new System.Drawing.Point(287, 282);
             this.lblMasaIsmi.Name = "lblMasaIsmi";
             this.lblMasaIsmi.Size = new System.Drawing.Size(0, 15);
             this.lblMasaIsmi.TabIndex = 0;
@@ -63,25 +67,29 @@ namespace CafeAutomation.App.Forms
             this.dgvListe.AllowUserToAddRows = false;
             this.dgvListe.AllowUserToDeleteRows = false;
             this.dgvListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListe.Location = new System.Drawing.Point(287, 69);
+            this.dgvListe.Location = new System.Drawing.Point(287, 13);
             this.dgvListe.MultiSelect = false;
             this.dgvListe.Name = "dgvListe";
             this.dgvListe.ReadOnly = true;
             this.dgvListe.RowTemplate.Height = 25;
             this.dgvListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvListe.Size = new System.Drawing.Size(501, 186);
+            this.dgvListe.Size = new System.Drawing.Size(501, 242);
             this.dgvListe.TabIndex = 1;
             // 
             // lblToplamTutar
             // 
             this.lblToplamTutar.AutoSize = true;
-            this.lblToplamTutar.Location = new System.Drawing.Point(756, 263);
+            this.lblToplamTutar.Location = new System.Drawing.Point(734, 282);
             this.lblToplamTutar.Name = "lblToplamTutar";
             this.lblToplamTutar.Size = new System.Drawing.Size(0, 15);
             this.lblToplamTutar.TabIndex = 2;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnSogukIcecekler);
+            this.groupBox1.Controls.Add(this.btnSicakIcecekler);
+            this.groupBox1.Controls.Add(this.btnTatlilar);
+            this.groupBox1.Controls.Add(this.btnYemekler);
             this.groupBox1.Controls.Add(this.btnFastFood);
             this.groupBox1.Controls.Add(this.btnCorbalar);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
@@ -91,13 +99,53 @@ namespace CafeAutomation.App.Forms
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kategoriler";
             // 
+            // btnSogukIcecekler
+            // 
+            this.btnSogukIcecekler.Location = new System.Drawing.Point(108, 165);
+            this.btnSogukIcecekler.Name = "btnSogukIcecekler";
+            this.btnSogukIcecekler.Size = new System.Drawing.Size(86, 45);
+            this.btnSogukIcecekler.TabIndex = 5;
+            this.btnSogukIcecekler.Text = "SOĞUK İÇECEKLER";
+            this.btnSogukIcecekler.UseVisualStyleBackColor = true;
+            this.btnSogukIcecekler.Click += new System.EventHandler(this.btnSogukIcecekler_Click);
+            // 
+            // btnSicakIcecekler
+            // 
+            this.btnSicakIcecekler.Location = new System.Drawing.Point(7, 166);
+            this.btnSicakIcecekler.Name = "btnSicakIcecekler";
+            this.btnSicakIcecekler.Size = new System.Drawing.Size(84, 45);
+            this.btnSicakIcecekler.TabIndex = 4;
+            this.btnSicakIcecekler.Text = "SICAK İÇECEKLER";
+            this.btnSicakIcecekler.UseVisualStyleBackColor = true;
+            this.btnSicakIcecekler.Click += new System.EventHandler(this.btnSicakIcecekler_Click);
+            // 
+            // btnTatlilar
+            // 
+            this.btnTatlilar.Location = new System.Drawing.Point(108, 98);
+            this.btnTatlilar.Name = "btnTatlilar";
+            this.btnTatlilar.Size = new System.Drawing.Size(86, 45);
+            this.btnTatlilar.TabIndex = 3;
+            this.btnTatlilar.Text = "TATLILAR";
+            this.btnTatlilar.UseVisualStyleBackColor = true;
+            this.btnTatlilar.Click += new System.EventHandler(this.btnTatlilar_Click);
+            // 
+            // btnYemekler
+            // 
+            this.btnYemekler.Location = new System.Drawing.Point(7, 99);
+            this.btnYemekler.Name = "btnYemekler";
+            this.btnYemekler.Size = new System.Drawing.Size(84, 45);
+            this.btnYemekler.TabIndex = 2;
+            this.btnYemekler.Text = "YEMEKLER";
+            this.btnYemekler.UseVisualStyleBackColor = true;
+            this.btnYemekler.Click += new System.EventHandler(this.btnYemekler_Click);
+            // 
             // btnFastFood
             // 
             this.btnFastFood.Location = new System.Drawing.Point(108, 22);
             this.btnFastFood.Name = "btnFastFood";
             this.btnFastFood.Size = new System.Drawing.Size(86, 45);
             this.btnFastFood.TabIndex = 1;
-            this.btnFastFood.Text = "FastFood";
+            this.btnFastFood.Text = "FAST FOOD";
             this.btnFastFood.UseVisualStyleBackColor = true;
             this.btnFastFood.Click += new System.EventHandler(this.btnFastFood_Click);
             // 
@@ -107,7 +155,7 @@ namespace CafeAutomation.App.Forms
             this.btnCorbalar.Name = "btnCorbalar";
             this.btnCorbalar.Size = new System.Drawing.Size(84, 45);
             this.btnCorbalar.TabIndex = 0;
-            this.btnCorbalar.Text = "Çorbalar";
+            this.btnCorbalar.Text = "ÇORBALAR";
             this.btnCorbalar.UseVisualStyleBackColor = true;
             this.btnCorbalar.Click += new System.EventHandler(this.btnCorbalar_Click);
             // 
@@ -156,7 +204,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnIptal
             // 
-            this.btnIptal.Location = new System.Drawing.Point(287, 281);
+            this.btnIptal.Location = new System.Drawing.Point(287, 332);
             this.btnIptal.Name = "btnIptal";
             this.btnIptal.Size = new System.Drawing.Size(121, 45);
             this.btnIptal.TabIndex = 9;
@@ -166,7 +214,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(414, 281);
+            this.btnSil.Location = new System.Drawing.Point(414, 332);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(121, 45);
             this.btnSil.TabIndex = 10;
@@ -176,7 +224,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnGeriDon
             // 
-            this.btnGeriDon.Location = new System.Drawing.Point(541, 281);
+            this.btnGeriDon.Location = new System.Drawing.Point(541, 332);
             this.btnGeriDon.Name = "btnGeriDon";
             this.btnGeriDon.Size = new System.Drawing.Size(121, 45);
             this.btnGeriDon.TabIndex = 11;
@@ -186,7 +234,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnAdisyon
             // 
-            this.btnAdisyon.Location = new System.Drawing.Point(668, 281);
+            this.btnAdisyon.Location = new System.Drawing.Point(668, 332);
             this.btnAdisyon.Name = "btnAdisyon";
             this.btnAdisyon.Size = new System.Drawing.Size(121, 45);
             this.btnAdisyon.TabIndex = 12;
@@ -196,7 +244,7 @@ namespace CafeAutomation.App.Forms
             // 
             // btnMasayiKapat
             // 
-            this.btnMasayiKapat.Location = new System.Drawing.Point(668, 332);
+            this.btnMasayiKapat.Location = new System.Drawing.Point(668, 383);
             this.btnMasayiKapat.Name = "btnMasayiKapat";
             this.btnMasayiKapat.Size = new System.Drawing.Size(121, 45);
             this.btnMasayiKapat.TabIndex = 13;
@@ -207,7 +255,7 @@ namespace CafeAutomation.App.Forms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(627, 258);
+            this.label3.Location = new System.Drawing.Point(612, 282);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 15);
             this.label3.TabIndex = 14;
@@ -217,7 +265,7 @@ namespace CafeAutomation.App.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1029, 590);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnMasayiKapat);
             this.Controls.Add(this.btnAdisyon);
@@ -266,5 +314,9 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.Button btnAdisyon;
         private System.Windows.Forms.Button btnMasayiKapat;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnSogukIcecekler;
+        private System.Windows.Forms.Button btnSicakIcecekler;
+        private System.Windows.Forms.Button btnTatlilar;
+        private System.Windows.Forms.Button btnYemekler;
     }
 }

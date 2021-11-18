@@ -288,6 +288,56 @@ namespace CafeAutomation.App.Forms
             ToplamTutarHesaplama();
             dgvListe.ClearSelection();
             MasaKontrol();
+            cmbUrunler.SelectedItem = null;
+            cmbUrunler.SelectedText = "--Seçiniz--";
+        }
+
+        private void btnYemekler_Click(object sender, EventArgs e)
+        {
+            cmbUrunler.Items.Clear();
+            foreach (var urun in UrunContext.Urunler)
+            {
+                if (urun.Kategori == "Yemekler")
+                {
+                    cmbUrunler.Items.Add(urun);
+                }
+            }
+        }
+
+        private void btnTatlilar_Click(object sender, EventArgs e)
+        {
+            cmbUrunler.Items.Clear();
+            foreach (var urun in UrunContext.Urunler)
+            {
+                if (urun.Kategori == "Tatlılar")
+                {
+                    cmbUrunler.Items.Add(urun);
+                }
+            }
+        }
+
+        private void btnSicakIcecekler_Click(object sender, EventArgs e)
+        {
+            cmbUrunler.Items.Clear();
+            foreach (var urun in UrunContext.Urunler)
+            {
+                if (urun.Kategori == "Sıcak İçecekler")
+                {
+                    cmbUrunler.Items.Add(urun);
+                }
+            }
+        }
+
+        private void btnSogukIcecekler_Click(object sender, EventArgs e)
+        {
+            cmbUrunler.Items.Clear();
+            foreach (var urun in UrunContext.Urunler)
+            {
+                if (urun.Kategori == "Soğuk İçecekler")
+                {
+                    cmbUrunler.Items.Add(urun);
+                }
+            }
         }
     }
 }

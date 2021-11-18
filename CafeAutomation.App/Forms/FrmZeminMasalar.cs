@@ -27,9 +27,10 @@ namespace CafeAutomation.App.Forms
                 {
                     Name = $"zeminMasa{masa.ZeminMasaNumarası}",
                     Text = $"Zemin Masa - {masa.ZeminMasaNumarası}",
-                    Height = 80,
-                    Width = 80
+                    Height = 150,
+                    Width = 150
                 };
+                masaButon.Font = new Font(masaButon.Font.FontFamily, 12);
                 masaButon.Click += new EventHandler(YeniButon_Click);
                 flpZeminMasalar.Controls.Add(masaButon);
             }
@@ -102,6 +103,7 @@ namespace CafeAutomation.App.Forms
                     if (sayac != 0)
                     {
                         item.BackColor = Color.Red;
+                        
                     }
                     else
                     {
@@ -121,6 +123,7 @@ namespace CafeAutomation.App.Forms
             ZeminMasaContext.ZeminMasalar.Add(yeniZeminMasa);
             ZeminMasaContext.Save();
             MasalariGetir();
+            MasaKontrol();
         }
 
         private ZeminMasa silinecekZeminMasa;
@@ -130,6 +133,7 @@ namespace CafeAutomation.App.Forms
             ZeminMasaContext.ZeminMasalar.Remove(silinecekZeminMasa);
             ZeminMasaContext.Save();
             MasalariGetir();
+            MasaKontrol();
         }
     }
 }

@@ -27,9 +27,10 @@ namespace CafeAutomation.App.Forms
                 {
                     Name = $"terasMasa{masa.TerasMasaNumarası}",
                     Text = $"Teras Masa - {masa.TerasMasaNumarası}",
-                    Height = 80,
-                    Width = 80
+                    Height = 150,
+                    Width = 150
                 };
+                masaButon.Font = new Font(masaButon.Font.FontFamily, 12);
                 masaButon.Click += new EventHandler(YeniButon_Click);
                 flpTerasMasalar.Controls.Add(masaButon);
             }
@@ -122,6 +123,7 @@ namespace CafeAutomation.App.Forms
             TerasMasaContext.TerasMasalar.Add(yeniTerasMasa);
             TerasMasaContext.Save();
             MasalariGetir();
+            MasaKontrol();
         }
 
         private TerasMasa silinecekTerasMasa;
@@ -131,6 +133,7 @@ namespace CafeAutomation.App.Forms
             TerasMasaContext.TerasMasalar.Remove(silinecekTerasMasa);
             TerasMasaContext.Save();
             MasalariGetir();
+            MasaKontrol();
         }
     }
 }

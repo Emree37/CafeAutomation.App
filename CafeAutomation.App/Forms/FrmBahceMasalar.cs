@@ -27,9 +27,10 @@ namespace CafeAutomation.App.Forms
                 {
                     Name = $"bahceMasa{masa.BahceMasaNumarası}",
                     Text = $"Bahçe Masa - {masa.BahceMasaNumarası}",
-                    Height = 80,
-                    Width = 80
+                    Height = 150,
+                    Width = 150
                 };
+                masaButon.Font = new Font(masaButon.Font.FontFamily, 12);
                 masaButon.Click += new EventHandler(YeniButon_Click);
                 flpBahceMasalar.Controls.Add(masaButon);
                 
@@ -80,8 +81,6 @@ namespace CafeAutomation.App.Forms
 
         private void FrmBahceMasalar_Load(object sender, EventArgs e)
         {
-            
-            //------------------------------------------------
             flpBahceMasalar.Controls.Clear();
             BahceMasaContext.Load();
             MasalariGetir();
@@ -125,6 +124,7 @@ namespace CafeAutomation.App.Forms
             BahceMasaContext.BahceMasalar.Add(yeniBahceMasa);
             BahceMasaContext.Save();
             MasalariGetir();
+            MasaKontrol();
         }
 
         private BahceMasa silinecekBahceMasa;
@@ -134,6 +134,7 @@ namespace CafeAutomation.App.Forms
             BahceMasaContext.BahceMasalar.Remove(silinecekBahceMasa);
             BahceMasaContext.Save();
             MasalariGetir();
+            MasaKontrol();
         }
     }
 }

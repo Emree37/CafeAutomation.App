@@ -29,6 +29,7 @@ namespace CafeAutomation.App.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTerasMasalar));
             this.label1 = new System.Windows.Forms.Label();
             this.txtMasaNumarasi = new System.Windows.Forms.TextBox();
             this.btnTerasMasaEkle = new System.Windows.Forms.Button();
@@ -39,24 +40,25 @@ namespace CafeAutomation.App.Forms
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(36, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 15);
+            this.label1.Size = new System.Drawing.Size(103, 15);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Numara";
+            this.label1.Text = "MASA NUMARASI";
             // 
             // txtMasaNumarasi
             // 
-            this.txtMasaNumarasi.Location = new System.Drawing.Point(92, 26);
+            this.txtMasaNumarasi.Location = new System.Drawing.Point(183, 26);
             this.txtMasaNumarasi.Name = "txtMasaNumarasi";
             this.txtMasaNumarasi.Size = new System.Drawing.Size(100, 23);
             this.txtMasaNumarasi.TabIndex = 7;
             // 
             // btnTerasMasaEkle
             // 
-            this.btnTerasMasaEkle.Location = new System.Drawing.Point(92, 68);
+            this.btnTerasMasaEkle.Location = new System.Drawing.Point(180, 69);
             this.btnTerasMasaEkle.Name = "btnTerasMasaEkle";
-            this.btnTerasMasaEkle.Size = new System.Drawing.Size(103, 23);
+            this.btnTerasMasaEkle.Size = new System.Drawing.Size(103, 67);
             this.btnTerasMasaEkle.TabIndex = 9;
             this.btnTerasMasaEkle.Text = "Masa Ekle";
             this.btnTerasMasaEkle.UseVisualStyleBackColor = true;
@@ -64,9 +66,9 @@ namespace CafeAutomation.App.Forms
             // 
             // btnTerasMasaSil
             // 
-            this.btnTerasMasaSil.Location = new System.Drawing.Point(92, 116);
+            this.btnTerasMasaSil.Location = new System.Drawing.Point(180, 154);
             this.btnTerasMasaSil.Name = "btnTerasMasaSil";
-            this.btnTerasMasaSil.Size = new System.Drawing.Size(103, 23);
+            this.btnTerasMasaSil.Size = new System.Drawing.Size(103, 76);
             this.btnTerasMasaSil.TabIndex = 10;
             this.btnTerasMasaSil.Text = "Masayı Sil";
             this.btnTerasMasaSil.UseVisualStyleBackColor = true;
@@ -74,17 +76,19 @@ namespace CafeAutomation.App.Forms
             // 
             // flpTerasMasalar
             // 
+            this.flpTerasMasalar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flpTerasMasalar.BackgroundImage")));
+            this.flpTerasMasalar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flpTerasMasalar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flpTerasMasalar.Location = new System.Drawing.Point(283, 0);
+            this.flpTerasMasalar.Location = new System.Drawing.Point(324, 0);
             this.flpTerasMasalar.Name = "flpTerasMasalar";
-            this.flpTerasMasalar.Size = new System.Drawing.Size(517, 450);
+            this.flpTerasMasalar.Size = new System.Drawing.Size(1600, 1061);
             this.flpTerasMasalar.TabIndex = 11;
             // 
             // FrmTerasMasalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1924, 1061);
             this.Controls.Add(this.flpTerasMasalar);
             this.Controls.Add(this.btnTerasMasaSil);
             this.Controls.Add(this.btnTerasMasaEkle);
