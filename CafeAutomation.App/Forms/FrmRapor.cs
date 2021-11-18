@@ -103,7 +103,7 @@ namespace CafeAutomation.App.Forms
                     toplamCiro += (item.ToplamTutar);
                 }
             }
-            label2.Text = toplamCiro.ToString();
+            label2.Text = $"{toplamCiro}.00₺";
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

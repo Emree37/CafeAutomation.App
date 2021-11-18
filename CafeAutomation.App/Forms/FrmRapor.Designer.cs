@@ -113,7 +113,7 @@ namespace CafeAutomation.App.Forms
             this.lblSecilenGunIsmi.AutoSize = true;
             this.lblSecilenGunIsmi.BackColor = System.Drawing.Color.Transparent;
             this.lblSecilenGunIsmi.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSecilenGunIsmi.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblSecilenGunIsmi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSecilenGunIsmi.Location = new System.Drawing.Point(267, 9);
             this.lblSecilenGunIsmi.Name = "lblSecilenGunIsmi";
             this.lblSecilenGunIsmi.Size = new System.Drawing.Size(65, 28);
@@ -125,7 +125,7 @@ namespace CafeAutomation.App.Forms
             this.lblGunToplamTutar.AutoSize = true;
             this.lblGunToplamTutar.BackColor = System.Drawing.Color.Transparent;
             this.lblGunToplamTutar.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblGunToplamTutar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblGunToplamTutar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblGunToplamTutar.Location = new System.Drawing.Point(597, 9);
             this.lblGunToplamTutar.Name = "lblGunToplamTutar";
             this.lblGunToplamTutar.Size = new System.Drawing.Size(65, 28);
@@ -147,8 +147,8 @@ namespace CafeAutomation.App.Forms
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(845, 65);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(763, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 28);
             this.label1.TabIndex = 8;
@@ -159,8 +159,8 @@ namespace CafeAutomation.App.Forms
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(1011, 65);
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(929, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 28);
             this.label2.TabIndex = 9;
@@ -173,7 +173,7 @@ namespace CafeAutomation.App.Forms
             this.BackColor = System.Drawing.Color.Maroon;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1402, 780);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGeriDon);
