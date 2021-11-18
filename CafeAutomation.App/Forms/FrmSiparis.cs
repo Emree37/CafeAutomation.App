@@ -100,7 +100,6 @@ namespace CafeAutomation.App.Forms
             ToplamTutarHesaplama();
             dgvListe.ClearSelection();
             MasaKontrol();
-
             cmbUrunler.SelectedItem = null;
             cmbUrunler.SelectedText = "--Seçiniz--";
         }
@@ -119,6 +118,8 @@ namespace CafeAutomation.App.Forms
 
         private void btnCorbalar_Click(object sender, EventArgs e)
         {
+            cmbUrunler.SelectedItem = null;
+            cmbUrunler.SelectedText = "--Seçiniz--";
             cmbUrunler.Items.Clear();
             foreach (var urun in UrunContext.Urunler)
             {
@@ -126,7 +127,6 @@ namespace CafeAutomation.App.Forms
                 {
                     cmbUrunler.Items.Add(urun);
                 }
-
             }
         }
 
