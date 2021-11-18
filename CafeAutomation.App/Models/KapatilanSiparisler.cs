@@ -21,5 +21,7 @@ namespace CafeAutomation.App.Models
         public string TarihGun { get; set; }
 
         public string TarihSaat { get; set; }
+
+        public DateTime Tarih { get; set; }
     }
 }

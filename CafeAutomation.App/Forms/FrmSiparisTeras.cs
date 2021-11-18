@@ -142,13 +142,15 @@ namespace CafeAutomation.App.Forms
 
         private void btnMasayiKapat_Click(object sender, EventArgs e)
         {
+            string[] toplamTutar = lblToplamTutar.Text.Split('.');
             Rapor rapor = new Rapor()
             {
                 MasaIsmi = lblMasaIsmi.Text,
                 //Tarih = DateTime.Now.ToShortDateString(),
                 TarihGun = DateTime.Now.ToString("MM/dd/yyyy"),
                 TarihSaat = DateTime.Now.ToString("HH:mm:ss"),
-                ToplamTutar = lblToplamTutar.Text
+                Tarih = DateTime.Now,
+                ToplamTutar = Int32.Parse(toplamTutar[0])
             };
             RaporContext.Raporlar.Add(rapor);
             RaporContext.Save();
@@ -166,7 +168,8 @@ namespace CafeAutomation.App.Forms
                         TutarTL = SiparisDetayContext.SiparisDetaylar[i].TutarTL,
                         MasaIsmi = SiparisDetayContext.SiparisDetaylar[i].MasaIsmi,
                         TarihGun = DateTime.Now.ToString("MM/dd/yyyy"),
-                        TarihSaat = DateTime.Now.ToString("HH:mm:ss")
+                        TarihSaat = DateTime.Now.ToString("HH:mm:ss"),
+                        Tarih = DateTime.Now
                     };
                     KapatilanSiparislerContext.KapatilanSiparisler.Add(kapatilanSiparisler);
                     KapatilanSiparislerContext.Save();

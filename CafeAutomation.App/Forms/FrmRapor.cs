@@ -41,6 +41,7 @@ namespace CafeAutomation.App.Forms
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "MM/dd/yyyy";
             RaporSiparis();
+            AyaGöreRaporlar();
         }
 
         public void DatagridviewSetting(DataGridView datagridview)
@@ -82,11 +83,27 @@ namespace CafeAutomation.App.Forms
             toplam = 0;
             foreach (var item in GünRaporu)
             {
-                split = item.ToplamTutar.Split('.');
-
-                toplam += Int32.Parse(split[0]);
+                toplam += item.ToplamTutar;
             }
             lblGunToplamTutar.Text = $"{toplam.ToString()}.00₺";
+        }
+
+        private List<Rapor> AyRaporu = new List<Rapor>();
+        DateTimePicker dtp = new DateTimePicker();
+        private void AyaGöreRaporlar()
+        {
+            RaporContext.Load();
+            AyRaporu = RaporContext.Raporlar.ToList();
+            int toplamCiro = 0;
+            for (DateTime a = DateTime.Now.AddDays(-2); a <= dtp.Value.AddDays(30); a = a.AddDays(1))
+            {
+                var seciliGunler = RaporContext.Raporlar.Where(x => x.Tarih.Day == a.Day);
+                foreach (var item in seciliGunler)
+                {
+                    toplamCiro += (item.ToplamTutar);
+                }
+            }
+            label2.Text = toplamCiro.ToString();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -122,11 +139,14 @@ namespace CafeAutomation.App.Forms
             dgvSiparisDetayRapor.Columns["MasaIsmi"].Visible = false;
             dgvSiparisDetayRapor.Columns["TarihGun"].Visible = false;
             dgvSiparisDetayRapor.Columns["TarihSaat"].Visible = false;
+            dgvSiparisDetayRapor.Columns["Tarih"].Visible = false;
 
             dgvSiparisRapor.Columns[0].HeaderText = "MASA İSMİ";
             dgvSiparisRapor.Columns[1].HeaderText = "GÜN";
             dgvSiparisRapor.Columns[2].HeaderText = "SAAT";
             dgvSiparisRapor.Columns[3].HeaderText = "TOPLAM TUTAR";
+            dgvSiparisRapor.Columns["Tarih"].Visible = false;
+            dgvSiparisRapor.Columns["ToplamTutar"].Visible = false;
         }
 
         private void btnGeriDon_Click(object sender, EventArgs e)

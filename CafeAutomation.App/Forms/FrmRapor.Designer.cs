@@ -40,6 +40,8 @@ namespace CafeAutomation.App.Forms
             this.lblSecilenGunIsmi = new System.Windows.Forms.Label();
             this.lblGunToplamTutar = new System.Windows.Forms.Label();
             this.btnGeriDon = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisRapor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisDetayRapor)).BeginInit();
             this.SuspendLayout();
@@ -140,6 +142,30 @@ namespace CafeAutomation.App.Forms
             this.btnGeriDon.UseVisualStyleBackColor = true;
             this.btnGeriDon.Click += new System.EventHandler(this.btnGeriDon_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(845, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 28);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "TOPLAM CİRO :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(1011, 65);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 28);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "label2";
+            // 
             // FrmRapor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -148,6 +174,8 @@ namespace CafeAutomation.App.Forms
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGeriDon);
             this.Controls.Add(this.lblGunToplamTutar);
             this.Controls.Add(this.lblSecilenGunIsmi);
@@ -176,5 +204,7 @@ namespace CafeAutomation.App.Forms
         private System.Windows.Forms.Label lblSecilenGunIsmi;
         private System.Windows.Forms.Label lblGunToplamTutar;
         private System.Windows.Forms.Button btnGeriDon;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

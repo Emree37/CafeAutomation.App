@@ -14,6 +14,8 @@ namespace CafeAutomation.App.Models
 
         public string TarihSaat { get; set; }
 
-        public string ToplamTutar { get; set; }
+        public int ToplamTutar { get; set; }
+
+        public DateTime Tarih { get; set; }
     }
 }
